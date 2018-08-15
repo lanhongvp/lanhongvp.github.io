@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="VS Code," />
+  <meta name="keywords" content="Tensorflow," />
 
 
 
@@ -79,27 +79,25 @@
 
 
 
-<meta name="description" content="最近，初初阶程序小白——澜子迷上了VS Code的高颜值，再加之其多平台，多语言支持和轻量级的特性，所以非常想安利给大家。不过也正是因为VS Code很轻量，所以需要手动安装一些插件，以及进行一些相应的配置，进而方便代码的调试或者Markdown的文档撰写等工作。 但是，由于网上很多博客在MAC端配置VS Code方面介绍的不是很完整，加之自己也属于入门小白阶段，因此自己在配置方面也踩了一点坑，所">
-<meta name="keywords" content="VS Code">
+<meta name="description" content="作为一名小白中的小白（苦笑脸），澜子的每一步都走得艰难万分（哭），好在身边还是有很靠谱的小伙伴能给我很多帮助，能让我艰难且缓慢无比的进度得到不小的提升。所以，对于最近踩坑很多的 tf.metrics，特地记录一下。当然，如果大噶发现博客中我理解过程中的任何错误，一定记得告诉我啊，这样才能更好地进步哇。 之所以会接触到这个API，是因为最近在做一个二分类的问题，然后希望用多个评价指标包括：召回率（R">
+<meta name="keywords" content="Tensorflow">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MAC_VSCODE_Python&#x2F;Markdown">
-<meta property="og:url" content="http://yoursite.com/2018/08/15/MAC-VSCODE-python-markdown/index.html">
+<meta property="og:title" content="Tensorflow-tf-metrics">
+<meta property="og:url" content="http://yoursite.com/2018/08/15/Tensorflow-tf-metrics/index.html">
 <meta property="og:site_name" content="Hong Lan">
-<meta property="og:description" content="最近，初初阶程序小白——澜子迷上了VS Code的高颜值，再加之其多平台，多语言支持和轻量级的特性，所以非常想安利给大家。不过也正是因为VS Code很轻量，所以需要手动安装一些插件，以及进行一些相应的配置，进而方便代码的调试或者Markdown的文档撰写等工作。 但是，由于网上很多博客在MAC端配置VS Code方面介绍的不是很完整，加之自己也属于入门小白阶段，因此自己在配置方面也踩了一点坑，所">
+<meta property="og:description" content="作为一名小白中的小白（苦笑脸），澜子的每一步都走得艰难万分（哭），好在身边还是有很靠谱的小伙伴能给我很多帮助，能让我艰难且缓慢无比的进度得到不小的提升。所以，对于最近踩坑很多的 tf.metrics，特地记录一下。当然，如果大噶发现博客中我理解过程中的任何错误，一定记得告诉我啊，这样才能更好地进步哇。 之所以会接触到这个API，是因为最近在做一个二分类的问题，然后希望用多个评价指标包括：召回率（R">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://yoursite.com/2018/08/15/MAC-VSCODE-python-markdown/1.jpeg">
-<meta property="og:image" content="http://yoursite.com/2018/08/15/MAC-VSCODE-python-markdown/2.jpeg">
-<meta property="og:image" content="http://yoursite.com/2018/08/15/MAC-VSCODE-python-markdown/3.jpeg">
-<meta property="og:image" content="http://yoursite.com/2018/08/15/MAC-VSCODE-python-markdown/5.jpeg">
-<meta property="og:image" content="http://yoursite.com/2018/08/15/MAC-VSCODE-python-markdown/7.jpeg">
-<meta property="og:image" content="http://yoursite.com/2018/08/15/MAC-VSCODE-python-markdown/9.jpeg">
-<meta property="og:image" content="http://yoursite.com/2018/08/15/MAC-VSCODE-python-markdown/10.jpeg">
-<meta property="og:image" content="http://yoursite.com/2018/08/15/MAC-VSCODE-python-markdown/11.jpeg">
-<meta property="og:updated_time" content="2018-08-15T04:58:20.039Z">
+<meta property="og:image" content="http://yoursite.com/2018/08/15/Tensorflow-tf-metrics/WechatIMG136.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/15/Tensorflow-tf-metrics/WechatIMG132.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/15/Tensorflow-tf-metrics/WechatIMG133.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/15/Tensorflow-tf-metrics/WechatIMG134.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/15/Tensorflow-tf-metrics/WechatIMG135.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/15/Tensorflow-tf-metrics/WechatIMG137.png">
+<meta property="og:updated_time" content="2018-08-15T05:17:19.863Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MAC_VSCODE_Python&#x2F;Markdown">
-<meta name="twitter:description" content="最近，初初阶程序小白——澜子迷上了VS Code的高颜值，再加之其多平台，多语言支持和轻量级的特性，所以非常想安利给大家。不过也正是因为VS Code很轻量，所以需要手动安装一些插件，以及进行一些相应的配置，进而方便代码的调试或者Markdown的文档撰写等工作。 但是，由于网上很多博客在MAC端配置VS Code方面介绍的不是很完整，加之自己也属于入门小白阶段，因此自己在配置方面也踩了一点坑，所">
-<meta name="twitter:image" content="http://yoursite.com/2018/08/15/MAC-VSCODE-python-markdown/1.jpeg">
+<meta name="twitter:title" content="Tensorflow-tf-metrics">
+<meta name="twitter:description" content="作为一名小白中的小白（苦笑脸），澜子的每一步都走得艰难万分（哭），好在身边还是有很靠谱的小伙伴能给我很多帮助，能让我艰难且缓慢无比的进度得到不小的提升。所以，对于最近踩坑很多的 tf.metrics，特地记录一下。当然，如果大噶发现博客中我理解过程中的任何错误，一定记得告诉我啊，这样才能更好地进步哇。 之所以会接触到这个API，是因为最近在做一个二分类的问题，然后希望用多个评价指标包括：召回率（R">
+<meta name="twitter:image" content="http://yoursite.com/2018/08/15/Tensorflow-tf-metrics/WechatIMG136.png">
 
 
 
@@ -129,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/08/15/MAC-VSCODE-python-markdown/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/08/15/Tensorflow-tf-metrics/"/>
 
 
 
 
 
-  <title>MAC_VSCODE_Python/Markdown | Hong Lan</title>
+  <title>Tensorflow-tf-metrics | Hong Lan</title>
   
 
 
@@ -274,7 +272,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/15/MAC-VSCODE-python-markdown/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/15/Tensorflow-tf-metrics/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Hong Lan">
@@ -291,7 +289,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">MAC_VSCODE_Python/Markdown</h1>
+          <h1 class="post-title" itemprop="name headline">Tensorflow-tf-metrics</h1>
         
 
         <div class="post-meta">
@@ -303,7 +301,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-08-15T11:53:19+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-08-15T13:04:58+08:00">
                 2018-08-15
               </time>
             
@@ -326,8 +324,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/TOOLS/" itemprop="url" rel="index">
-                    <span itemprop="name">TOOLS</span>
+                  <a href="/categories/Tensorflow/" itemprop="url" rel="index">
+                    <span itemprop="name">Tensorflow</span>
                   </a>
                 </span>
 
@@ -344,8 +342,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/08/15/MAC-VSCODE-python-markdown/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/08/15/MAC-VSCODE-python-markdown/" itemprop="commentCount"></span>
+                <a href="/2018/08/15/Tensorflow-tf-metrics/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/08/15/Tensorflow-tf-metrics/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -378,46 +376,49 @@
       
 
       
-        <p>最近，初初阶程序小白——澜子迷上了<strong>VS Code</strong>的高颜值，再加之其多平台，多语言支持和轻量级的特性，所以非常想安利给大家。不过也正是因为VS Code很轻量，所以需要手动安装一些插件，以及进行一些相应的配置，进而方便代码的调试或者Markdown的文档撰写等工作。</p>
-<p>但是，由于网上很多博客在<strong>MAC端配置VS Code</strong>方面介绍的不是很完整，加之自己也属于入门小白阶段，因此自己在配置方面也踩了一点坑，所以澜子的第一篇博客，希望能比较清楚地介绍VS Code的使用，然后可以成功安利VS Code，让大家用得顺手。</p>
-<p><strong>Windows版和Linux版的VS Code</strong>暂时还没有尝试，等下次试了之后再来告诉大家。<br>如果文中还有没有涉及的地方，下面给出了VS Code的官方文档，需要的同学可以点进去看看。</p>
+        <p>作为一名小白中的小白（苦笑脸），澜子的每一步都走得艰难万分（哭），好在身边还是有很靠谱的小伙伴能给我很多帮助，能让我艰难且缓慢无比的进度得到不小的提升。<br>所以，对于最近踩坑很多的 <strong>tf.metrics</strong>，特地记录一下。<br>当然，如果大噶发现博客中我理解过程中的任何错误，一定记得告诉我啊，这样才能更好地进步哇。</p>
+<p>之所以会接触到这个API，是因为最近在做一个二分类的问题，然后希望用多个评价指标包括：<strong>召回率（Recall），精确率（Precision），F_Score，AUC</strong>对模型进行综合评估，而不仅仅只是<strong>准确率（Accuracy）</strong> 的单一指标。</p>
+<h2 id="评价指标简介"><a href="#评价指标简介" class="headerlink" title="评价指标简介"></a>评价指标简介</h2><h3 id="混淆矩阵"><a href="#混淆矩阵" class="headerlink" title="混淆矩阵"></a>混淆矩阵</h3><p>混淆矩阵是理解众多评价指标的基础。先贴一张图，经典的混淆矩阵是长这个样子滴。</p>
+<p><img src="/2018/08/15/Tensorflow-tf-metrics/WechatIMG136.png" alt=""></p>
+<p>理解混淆矩阵以及下文所涉及到的其他的评价指标之前，我们首先要了解一下 <strong>TP,FP,TN,FN</strong> 这四个被广泛应用于二分类评价中的基本概念。<a href="http://ronny.rest/blog/post_2018_01_26_precision_recall/" target="_blank" rel="noopener">这一篇文章</a> 图文并茂，解释得很不错，我也截取了几张很好看的图，会依次出现在后续的文章中。下图便很好地解释了四个基本概念。</p>
+<p><img src="/2018/08/15/Tensorflow-tf-metrics/WechatIMG132.png" alt=""></p>
 <ul>
-<li><a href="https://code.visualstudio.com/docs/" target="_blank" rel="noopener">VS Code官方文档</a></li>
+<li>TP：True Positive，预测为正例，实际也为正例。</li>
+<li>FP：False Positive，预测为正例，实际却为负例。</li>
+<li>TN：True Negative，预测为负例，实际也为负例。</li>
+<li>FN：False Negative，预测为负例，实际却为正例。</li>
 </ul>
-<h2 id="VS-Code官网下载"><a href="#VS-Code官网下载" class="headerlink" title="VS Code官网下载"></a>VS Code官网下载</h2><p>下载安装的步骤比较简单，在此就不细说了。</p>
+<h3 id="准确率（Accuracy）"><a href="#准确率（Accuracy）" class="headerlink" title="准确率（Accuracy）"></a>准确率（Accuracy）</h3><p>首先上图一张，颜值即正义，有这么好看的图，应该很好理解其中的含义吧。<strong>准确率</strong> 即指所有预测正确的样本（无论预测的是正例还是负例）占所有样本的比例。</p>
+<p><img src="/2018/08/15/Tensorflow-tf-metrics/WechatIMG133.png" alt=""></p>
+<h3 id="精确率（Precision）"><a href="#精确率（Precision）" class="headerlink" title="精确率（Precision）"></a>精确率（Precision）</h3><p>高颜值的美图继续。精确率就是指 <strong>当前划分到正样本类别中，被正确分类的比例，即真正的正样本所占所有预测为正样本的比例。</strong></p>
+<p>其实我自己在没有真正运用这些指标之前，并不是很理解其中的含义。针对我自己这段时间的经历，我的理解是 <strong>运用精确率，可以发现模型的潜在问题：比如我自己第一个尝试的模型，就出现了模型的预测输出一直为零的情况</strong>。但是，由于我之前并没有加入精确率的指标，只关注了模型的准确率，导致模型的准确率结果<strong>虽然有90%，但是精确率出现了NAN</strong>。</p>
+<p>我自己分析出现这个结果的原因是：第一，样本的数据量很大且比较稀疏；第二，小白如我在数据预处理方面做得很糟糕，导致数据分布就很不合理，也就意味着会出现 <strong>一个batch里面label中0的数量远大于1，进而模型一直在学0的情况</strong>。而我们如果仅仅只看准确率，模型似乎没有那么糟糕，然而其实模型的效果是很差的，准确率没有很低只是因为batch本身比较稀疏，所以就算模型输出一直是零，也不会出现很低的准确率。那么，有了 <strong>精确率</strong> 就够了吗？当然不是，我们接着看一个简单的例子。</p>
+<p>比如：我们有一个样本数量为50的数据集，其中正样本的数量为20。但是，在我们所有的预测结果中，只预测出了一个正样本，并且这个样本也确实是正样本，那么 <strong>TP=1，FP=0，Precision = TP/(TP+FP) = 1.0</strong>，那么我们的模型是不是就很好了呢？当然不是，我们还有19个正样本都没有预测成功呢。所以，是时候使出 <strong>召回率</strong> 这一绝招啦。</p>
+<p><img src="/2018/08/15/Tensorflow-tf-metrics/WechatIMG134.png" alt=""></p>
+<h3 id="召回率（Recall）"><a href="#召回率（Recall）" class="headerlink" title="召回率（Recall）"></a>召回率（Recall）</h3><p>美图接着上。召回率即指 <strong>当前被分到正样本类别中，真实的正样本占所有正样本的比例，即召回了多少正样本的比例。</strong></p>
+<p><img src="/2018/08/15/Tensorflow-tf-metrics/WechatIMG135.png" alt=""></p>
+<p>接着上文继续说，精确率和召回率之间存在着什么关系呢？我们当然希望 <strong>Precision 和 Recall</strong> 的值越高越好。在上文的例子中，我们得到模型的精确率为1，但并不表示模型就很好，因为 <strong>FN=19</strong>，可以得到 <strong>召回率 Recall = TP/(TP+FN)= 0.05</strong>。所以，如果仅仅只靠精确率，显然也是不够的。</p>
+<p>那么问题又来了，有没有一个能够结合两者的评价指标呢？必杀技 <strong>F_Score</strong> 来也。</p>
+<h2 id="F-Score"><a href="#F-Score" class="headerlink" title="F_Score"></a>F_Score</h2><p>此处没有美图了。F_Score其实就是 Precision和 Recall的加权调和平均：</p>
+<p>$$\ F= \frac{(\alpha^2+1)P*R}{\alpha^2)(P+R)}$$</p>
+<p>当 $\alpha = 1$ 时，即是我们最常用的F1_Score</p>
+<p>$$\ F_1= \frac{2PR}{(P+R)}$$</p>
+<p>因为 <strong> $ F_1$ </strong> 综合了 Precision 和 Recall 的结果，所以当 <strong> $F_1$ 或者 <em>F_Score</em> </strong> 较高时，说明结果较为理想。</p>
+<h2 id="AUC-Area-under-the-ROC-curve"><a href="#AUC-Area-under-the-ROC-curve" class="headerlink" title="AUC(Area under the ROC curve)"></a>AUC(Area under the ROC curve)</h2><p>呜啦啦，我最近涉及到的最后一个指标啦。在介绍<strong>AUC</strong>之前，首先要了解什么是 <strong>ROC曲线</strong>，他是这个样子滴。ROC曲线上的每一个点对应于一个 <strong>threshold</strong>，对于一个分类器，<strong>每个threshold下会有一个TPR和FPR</strong>。</p>
+<p>这里的 <strong>threshold</strong>怎么理解呢？举一个简单的例子：对于某个二分类分类器来说，输出结果 <strong>是0还是1</strong>，往往取决于输出的概率以及预定的概率阈值，比如常见的阈值就是0.5，大于0.5的认为是正样本，小于0.5的认为是负样本。</p>
 <ul>
-<li><a href="https://code.visualstudio.com/Download" target="_blank" rel="noopener">VS Code官网下载地址</a></li>
+<li>横轴：False Positive Rate（假阳率，FPR）</li>
+<li>纵轴：True Positive Rate（真阳率，TPR） </li>
 </ul>
-<h2 id="VS-Code插件推荐"><a href="#VS-Code插件推荐" class="headerlink" title="VS Code插件推荐"></a>VS Code插件推荐</h2><p>在我用VS Code这一小段时间内，总结了几款目前我自己比较常用的插件，分享给大家。其中，<strong>插件安装图标如图所示</strong>。</p>
-<p><img src="/2018/08/15/MAC-VSCODE-python-markdown/1.jpeg" alt=""></p>
+<p><img src="/2018/08/15/Tensorflow-tf-metrics/WechatIMG137.png" alt=""></p>
+<p>理解了 <strong>ROC曲线</strong>之后，<strong>AUC</strong>就很好理解啦，其指的就是<strong>ROC曲线包围的面积啦</strong>，也就是图中的绿色部分。<br><strong>ROC曲线</strong>一定程度上可以反映分类器的分类效果，但是不够直观，我们希望有一个直观的指标，我们可以通过观察其数值的大小，直接判断分类器的分类性能，于是AUC横空出世啦。AUC可以直观地反映了ROC曲线表达的分类能力。</p>
 <ul>
-<li><strong>C/C++ for Visual Studio Code</strong>  <strong>（C/C++环境支持）</strong></li>
-<li><strong>C/C++ Clang Command Adapter</strong> <strong>（C/C++代码提示）</strong></li>
-<li><strong>Code Runner</strong> <strong>（多语言代码一键运行）</strong></li>
-<li><strong>Markdown Preview Enhanced</strong> <strong>（markdown文档实时预览，效果很棒）</strong></li>
-<li><strong>Markdown-TOC</strong> <strong>（一键生成markdown文档目录）</strong></li>
-<li><strong>Python extension for Visual Studio Code</strong> <strong>（python环境支持）</strong></li>
-<li><strong>Dracula At Night for Visual Studio Code</strong> <strong>（超级无敌好看的颜色主题）</strong></li>
+<li>AUC ＝ 1，代表完美分类器</li>
+<li>0.5 &lt; AUC &lt; 1，优于随机分类器</li>
+<li>0 &lt; AUC &lt; 0.5，差于随机分类器</li>
 </ul>
-<p>最后一个插件是一个<strong>非常无敌好看又很萌的颜色主题</strong>，就是因为这个颜色主题，我深深地爱上了<strong>VS Code</strong>。附一张编辑页面的效果图，<strong>关键是代码高亮有粉色，可以说是很开心了。</strong></p>
-<p><img src="/2018/08/15/MAC-VSCODE-python-markdown/2.jpeg" alt=""></p>
-<h2 id="VS-Code-Python环境配置"><a href="#VS-Code-Python环境配置" class="headerlink" title="VS Code Python环境配置"></a>VS Code Python环境配置</h2><p><strong><em>python插件</em></strong> 安装完毕之后，首先需要将相应的文件夹添加到<strong><em>VS Code对应的工作区</em></strong>，便于后续代码调试，如图所示。</p>
-<p><img src="/2018/08/15/MAC-VSCODE-python-markdown/3.jpeg" alt=""></p>
-<p>然后，在文本编辑区新建文本，编写一个简单的python脚本，保存为<strong><em>two_sum.py</em></strong>至工作区文件夹中，代码如下，<strong><em>vscode操作</em></strong>如图所示：其中，我工作区文件夹名称是<strong><em>vscode_python</em></strong>，然后因为<strong><em>Code Runner</em></strong>的功劳，此时只需要点右上角的运行按钮，即可运行脚本。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># two_sum</span></span><br><span class="line">a = <span class="number">2</span></span><br><span class="line">b = <span class="number">3</span></span><br><span class="line">result = a+b</span><br><span class="line"><span class="keyword">print</span> (result)</span><br></pre></td></tr></table></figure></p>
-<p><img src="/2018/08/15/MAC-VSCODE-python-markdown/5.jpeg" alt=""></p>
-<p>此时已经实现了运用VS Code运行python的基本配置，但是如果想要调试代码，又应该怎么办呢？继续上图。</p>
-<p>选择<strong><em>虫子</em></strong>的图标，然后选择<strong><em>Add Config(vscode_python)</em></strong>，随后再跳出的窗口选择<strong><em>python</em></strong>，即可自动生成<strong><em>launch.json</em></strong>的配置文件，如第二张图所示。</p>
-<p><img src="/2018/08/15/MAC-VSCODE-python-markdown/7.jpeg" alt=""></p>
-<p><img src="/2018/08/15/MAC-VSCODE-python-markdown/9.jpeg" alt=""></p>
-<p>此时，只需要按下<strong><em>F5</em></strong>的快捷键，就可以愉快调试python代码啦，成功调试的图片如图所示。</p>
-<p><img src="/2018/08/15/MAC-VSCODE-python-markdown/10.jpeg" alt=""></p>
-<h2 id="Markdown配置"><a href="#Markdown配置" class="headerlink" title="Markdown配置"></a>Markdown配置</h2><p>用VS Code写Markdown也可以说是很开心的，因为实时渲染效果很好，并且可以根据Markdown源文档实时滚动显示，当然最主要的还是颜值高，看着就很开心呀。</p>
-<p>Markdown的配置也很简单，就安装一下上文的插件，然后直接点击<strong><em>reload</em></strong> 即可使用（因为我已经安装过，所以红框部分没有显示reload，如果是第一次安装，便会有显示）。</p>
-<p><img src="/2018/08/15/MAC-VSCODE-python-markdown/11.jpeg" alt=""></p>
-<p>其实，我配置过程中最费劲的是C/C++调试环境的配置，本来想这一篇博客都写完的，但是发现内容稍微有一点多，然后时间有一点晚，所以下一篇继续。</p>
-<p>最后，如果大家配置过程中发现有什么问题，或者在使用VS Code有什么奇技，欢迎留言告诉我呀，因为我自己也是一个初初阶的小白，所以可能写的过程中会有疏漏，然后呢，希望我们能一起进步呀。</p>
-<p><strong>澜子的邮箱：<a href="mailto:945086071@qq.com" target="_blank" rel="noopener">945086071@qq.com</a></strong></p>
-<hr>
+<p>好气哦，每次总是越写越多（苦笑脸），正文还没有写，就已经七七八八敲了一堆，澜子要去赶车了，正文放在下一篇继续。</p>
+<p>大噶发现错误或者什么我理解得不对的地方，一定要告诉我啊，不能让我一直瞎写啊。</p>
 
       
     </div>
@@ -435,7 +436,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/VS-Code/" rel="tag"><i class="fa fa-tag"></i>VS Code</a>
+            <a href="/tags/Tensorflow/" rel="tag"><i class="fa fa-tag"></i>Tensorflow</a>
           
         </div>
       
@@ -448,8 +449,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/08/15/MAC-VSCODE-C-C/" rel="next" title="MAC_VSCODE_C/C++">
-                <i class="fa fa-chevron-left"></i> MAC_VSCODE_C/C++
+              <a href="/2018/08/15/MAC-VSCODE-python-markdown/" rel="next" title="MAC_VSCODE_Python/Markdown">
+                <i class="fa fa-chevron-left"></i> MAC_VSCODE_Python/Markdown
               </a>
             
           </div>
@@ -457,10 +458,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/08/15/VSCode-tricks/" rel="prev" title="VSCode_tricks">
-                VSCode_tricks <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -551,7 +548,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -562,7 +559,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -611,7 +608,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#VS-Code官网下载"><span class="nav-number">1.</span> <span class="nav-text">VS Code官网下载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#VS-Code插件推荐"><span class="nav-number">2.</span> <span class="nav-text">VS Code插件推荐</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#VS-Code-Python环境配置"><span class="nav-number">3.</span> <span class="nav-text">VS Code Python环境配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown配置"><span class="nav-number">4.</span> <span class="nav-text">Markdown配置</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#评价指标简介"><span class="nav-number">1.</span> <span class="nav-text">评价指标简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#混淆矩阵"><span class="nav-number">1.1.</span> <span class="nav-text">混淆矩阵</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#准确率（Accuracy）"><span class="nav-number">1.2.</span> <span class="nav-text">准确率（Accuracy）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#精确率（Precision）"><span class="nav-number">1.3.</span> <span class="nav-text">精确率（Precision）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#召回率（Recall）"><span class="nav-number">1.4.</span> <span class="nav-text">召回率（Recall）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#F-Score"><span class="nav-number">2.</span> <span class="nav-text">F_Score</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AUC-Area-under-the-ROC-curve"><span class="nav-number">3.</span> <span class="nav-text">AUC(Area under the ROC curve)</span></a></li></ol></div>
             
 
           </div>
