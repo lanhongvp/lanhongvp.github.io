@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="VS Code," />
+  <meta name="keywords" content="Tensorflow," />
 
 
 
@@ -79,21 +79,25 @@
 
 
 
-<meta name="description" content="本周先暂时放一下tensorflow，先跟大家安利一下两个使用 VS Code 的小技巧。澜子本着 就算代码敲不好，准备工作也要妥妥的 的理想信念，安利大噶两个爽到飞起的小技巧（大神请轻喷哇）。本篇博客的操作都可以在 VS Code 上搞定的哈。接下来先跟大噶说一下澜子目前所用电脑的各项配置：  电脑型号：MACBook Air 操作系统：macOS 10.13.5 x86_64  首先，我们要做">
-<meta name="keywords" content="VS Code">
+<meta name="description" content="作为一名小白中的小白（苦笑脸），澜子的每一步都走得艰难万分（哭），好在身边还是有很靠谱的小伙伴能给我很多帮助，能让我艰难且缓慢无比的进度得到不小的提升。所以，对于最近踩坑很多的 tf.metrics，特地记录一下。当然，如果大噶发现博客中我理解过程中的任何错误，一定记得告诉我啊，这样才能更好地进步哇。 之所以会接触到这个API，是因为最近在做一个二分类的问题，然后希望用多个评价指标包括：召回率（R">
+<meta name="keywords" content="Tensorflow">
 <meta property="og:type" content="article">
-<meta property="og:title" content="VSCode_tricks">
-<meta property="og:url" content="http://yoursite.com/2018/08/15/VSCode-tricks/index.html">
+<meta property="og:title" content="Tensorflow-tf-metrics">
+<meta property="og:url" content="http://yoursite.com/2018/08/15/Tensorflow-tf-metrics/index.html">
 <meta property="og:site_name" content="Hong Lan">
-<meta property="og:description" content="本周先暂时放一下tensorflow，先跟大家安利一下两个使用 VS Code 的小技巧。澜子本着 就算代码敲不好，准备工作也要妥妥的 的理想信念，安利大噶两个爽到飞起的小技巧（大神请轻喷哇）。本篇博客的操作都可以在 VS Code 上搞定的哈。接下来先跟大噶说一下澜子目前所用电脑的各项配置：  电脑型号：MACBook Air 操作系统：macOS 10.13.5 x86_64  首先，我们要做">
+<meta property="og:description" content="作为一名小白中的小白（苦笑脸），澜子的每一步都走得艰难万分（哭），好在身边还是有很靠谱的小伙伴能给我很多帮助，能让我艰难且缓慢无比的进度得到不小的提升。所以，对于最近踩坑很多的 tf.metrics，特地记录一下。当然，如果大噶发现博客中我理解过程中的任何错误，一定记得告诉我啊，这样才能更好地进步哇。 之所以会接触到这个API，是因为最近在做一个二分类的问题，然后希望用多个评价指标包括：召回率（R">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://yoursite.com/2018/08/15/VSCode-tricks/WechatIMG161.png">
-<meta property="og:image" content="http://yoursite.com/2018/08/15/VSCode-tricks/WechatIMG163.png">
-<meta property="og:updated_time" content="2018-08-15T05:23:06.348Z">
+<meta property="og:image" content="http://yoursite.com/2018/08/15/Tensorflow-tf-metrics/WechatIMG136.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/15/Tensorflow-tf-metrics/WechatIMG132.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/15/Tensorflow-tf-metrics/WechatIMG133.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/15/Tensorflow-tf-metrics/WechatIMG134.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/15/Tensorflow-tf-metrics/WechatIMG135.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/15/Tensorflow-tf-metrics/WechatIMG137.png">
+<meta property="og:updated_time" content="2018-08-15T05:36:47.657Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="VSCode_tricks">
-<meta name="twitter:description" content="本周先暂时放一下tensorflow，先跟大家安利一下两个使用 VS Code 的小技巧。澜子本着 就算代码敲不好，准备工作也要妥妥的 的理想信念，安利大噶两个爽到飞起的小技巧（大神请轻喷哇）。本篇博客的操作都可以在 VS Code 上搞定的哈。接下来先跟大噶说一下澜子目前所用电脑的各项配置：  电脑型号：MACBook Air 操作系统：macOS 10.13.5 x86_64  首先，我们要做">
-<meta name="twitter:image" content="http://yoursite.com/2018/08/15/VSCode-tricks/WechatIMG161.png">
+<meta name="twitter:title" content="Tensorflow-tf-metrics">
+<meta name="twitter:description" content="作为一名小白中的小白（苦笑脸），澜子的每一步都走得艰难万分（哭），好在身边还是有很靠谱的小伙伴能给我很多帮助，能让我艰难且缓慢无比的进度得到不小的提升。所以，对于最近踩坑很多的 tf.metrics，特地记录一下。当然，如果大噶发现博客中我理解过程中的任何错误，一定记得告诉我啊，这样才能更好地进步哇。 之所以会接触到这个API，是因为最近在做一个二分类的问题，然后希望用多个评价指标包括：召回率（R">
+<meta name="twitter:image" content="http://yoursite.com/2018/08/15/Tensorflow-tf-metrics/WechatIMG136.png">
 
 
 
@@ -123,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/08/15/VSCode-tricks/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/08/15/Tensorflow-tf-metrics/"/>
 
 
 
 
 
-  <title>VSCode_tricks | Hong Lan</title>
+  <title>Tensorflow-tf-metrics | Hong Lan</title>
   
 
 
@@ -268,7 +272,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/15/VSCode-tricks/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/15/Tensorflow-tf-metrics/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Hong Lan">
@@ -285,7 +289,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">VSCode_tricks</h1>
+          <h1 class="post-title" itemprop="name headline">Tensorflow-tf-metrics</h1>
         
 
         <div class="post-meta">
@@ -297,7 +301,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-08-15T13:20:42+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-08-15T13:04:58+08:00">
                 2018-08-15
               </time>
             
@@ -320,8 +324,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/TOOLS/" itemprop="url" rel="index">
-                    <span itemprop="name">TOOLS</span>
+                  <a href="/categories/Tensorflow/" itemprop="url" rel="index">
+                    <span itemprop="name">Tensorflow</span>
                   </a>
                 </span>
 
@@ -338,8 +342,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/08/15/VSCode-tricks/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/08/15/VSCode-tricks/" itemprop="commentCount"></span>
+                <a href="/2018/08/15/Tensorflow-tf-metrics/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/08/15/Tensorflow-tf-metrics/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -372,71 +376,49 @@
       
 
       
-        <p>本周先暂时放一下tensorflow，先跟大家安利一下两个使用 <strong>VS Code</strong> 的小技巧。<br>澜子本着 <strong>就算代码敲不好，准备工作也要妥妥的</strong> 的理想信念，安利大噶两个爽到飞起的小技巧（大神请轻喷哇）。<br>本篇博客的操作都可以在 <strong>VS Code</strong> 上搞定的哈。接下来先跟大噶说一下澜子目前所用电脑的各项配置：</p>
+        <p>作为一名小白中的小白（苦笑脸），澜子的每一步都走得艰难万分（哭），好在身边还是有很靠谱的小伙伴能给我很多帮助，能让我艰难且缓慢无比的进度得到不小的提升。<br>所以，对于最近踩坑很多的 <strong>tf.metrics</strong>，特地记录一下。<br>当然，如果大噶发现博客中我理解过程中的任何错误，一定记得告诉我啊，这样才能更好地进步哇。</p>
+<p>之所以会接触到这个API，是因为最近在做一个二分类的问题，然后希望用多个评价指标包括：<strong>召回率（Recall），精确率（Precision），F_Score，AUC</strong>对模型进行综合评估，而不仅仅只是<strong>准确率（Accuracy）</strong> 的单一指标。</p>
+<h2 id="评价指标简介"><a href="#评价指标简介" class="headerlink" title="评价指标简介"></a>评价指标简介</h2><h3 id="混淆矩阵"><a href="#混淆矩阵" class="headerlink" title="混淆矩阵"></a>混淆矩阵</h3><p>混淆矩阵是理解众多评价指标的基础。先贴一张图，经典的混淆矩阵是长这个样子滴。</p>
+<p><img src="/2018/08/15/Tensorflow-tf-metrics/WechatIMG136.png" alt=""></p>
+<p>理解混淆矩阵以及下文所涉及到的其他的评价指标之前，我们首先要了解一下 <strong>TP,FP,TN,FN</strong> 这四个被广泛应用于二分类评价中的基本概念。<a href="http://ronny.rest/blog/post_2018_01_26_precision_recall/" target="_blank" rel="noopener">这一篇文章</a> 图文并茂，解释得很不错，我也截取了几张很好看的图，会依次出现在后续的文章中。下图便很好地解释了四个基本概念。</p>
+<p><img src="/2018/08/15/Tensorflow-tf-metrics/WechatIMG132.png" alt=""></p>
 <ul>
-<li>电脑型号：MACBook Air</li>
-<li>操作系统：macOS 10.13.5 x86_64</li>
+<li>TP：True Positive，预测为正例，实际也为正例。</li>
+<li>FP：False Positive，预测为正例，实际却为负例。</li>
+<li>TN：True Negative，预测为负例，实际也为负例。</li>
+<li>FN：False Negative，预测为负例，实际却为正例。</li>
 </ul>
-<p>首先，我们要做的就是进入 <strong>VS Code的终端界面</strong> 如图所示：</p>
-<p><img src="/2018/08/15/VSCode-tricks/WechatIMG161.png" alt=""></p>
-<h2 id="pip换源"><a href="#pip换源" class="headerlink" title="pip换源"></a>pip换源</h2><p>小白如我，在不知道 <strong>pip换源</strong> 这一操作之前，安装一个包，看一集剧（偷懒的绝佳借口）<br>但是，自从换了源，就再也不能在 <strong>pip安装</strong> 的时候愉快滴看剧了，妈妈再也不用担心我的学习。<br>之所以要换源，就是因为原本pip安装的默认网址是国外的网站，所以速度灰常慢，还经常不稳定导致安装失败，但是如果换成国内镜像，速度就可以快到飞起。闲话不多说，看看怎么弄的吧。</p>
+<h3 id="准确率（Accuracy）"><a href="#准确率（Accuracy）" class="headerlink" title="准确率（Accuracy）"></a>准确率（Accuracy）</h3><p>首先上图一张，颜值即正义，有这么好看的图，应该很好理解其中的含义吧。<strong>准确率</strong> 即指所有预测正确的样本（无论预测的是正例还是负例）占所有样本的比例。</p>
+<p><img src="/2018/08/15/Tensorflow-tf-metrics/WechatIMG133.png" alt=""></p>
+<h3 id="精确率（Precision）"><a href="#精确率（Precision）" class="headerlink" title="精确率（Precision）"></a>精确率（Precision）</h3><p>高颜值的美图继续。精确率就是指 <strong>当前划分到正样本类别中，被正确分类的比例，即真正的正样本所占所有预测为正样本的比例。</strong></p>
+<p>其实我自己在没有真正运用这些指标之前，并不是很理解其中的含义。针对我自己这段时间的经历，我的理解是 <strong>运用精确率，可以发现模型的潜在问题：比如我自己第一个尝试的模型，就出现了模型的预测输出一直为零的情况</strong>。但是，由于我之前并没有加入精确率的指标，只关注了模型的准确率，导致模型的准确率结果<strong>虽然有90%，但是精确率出现了NAN</strong>。</p>
+<p>我自己分析出现这个结果的原因是：第一，样本的数据量很大且比较稀疏；第二，小白如我在数据预处理方面做得很糟糕，导致数据分布就很不合理，也就意味着会出现 <strong>一个batch里面label中0的数量远大于1，进而模型一直在学0的情况</strong>。而我们如果仅仅只看准确率，模型似乎没有那么糟糕，然而其实模型的效果是很差的，准确率没有很低只是因为batch本身比较稀疏，所以就算模型输出一直是零，也不会出现很低的准确率。那么，有了 <strong>精确率</strong> 就够了吗？当然不是，我们接着看一个简单的例子。</p>
+<p>比如：我们有一个样本数量为50的数据集，其中正样本的数量为20。但是，在我们所有的预测结果中，只预测出了一个正样本，并且这个样本也确实是正样本，那么 <strong>TP=1，FP=0，Precision = TP/(TP+FP) = 1.0</strong>，那么我们的模型是不是就很好了呢？当然不是，我们还有19个正样本都没有预测成功呢。所以，是时候使出 <strong>召回率</strong> 这一绝招啦。</p>
+<p><img src="/2018/08/15/Tensorflow-tf-metrics/WechatIMG134.png" alt=""></p>
+<h3 id="召回率（Recall）"><a href="#召回率（Recall）" class="headerlink" title="召回率（Recall）"></a>召回率（Recall）</h3><p>美图接着上。召回率即指 <strong>当前被分到正样本类别中，真实的正样本占所有正样本的比例，即召回了多少正样本的比例。</strong></p>
+<p><img src="/2018/08/15/Tensorflow-tf-metrics/WechatIMG135.png" alt=""></p>
+<p>接着上文继续说，精确率和召回率之间存在着什么关系呢？我们当然希望 <strong>Precision 和 Recall</strong> 的值越高越好。在上文的例子中，我们得到模型的精确率为1，但并不表示模型就很好，因为 <strong>FN=19</strong>，可以得到 <strong>召回率 Recall = TP/(TP+FN)= 0.05</strong>。所以，如果仅仅只靠精确率，显然也是不够的。</p>
+<p>那么问题又来了，有没有一个能够结合两者的评价指标呢？必杀技 <strong>F_Score</strong> 来也。</p>
+<h2 id="F-Score"><a href="#F-Score" class="headerlink" title="F_Score"></a>F_Score</h2><p>此处没有美图了。F_Score其实就是 Precision和 Recall的加权调和平均：</p>
+<p>$$\ F= \frac{(\alpha^2+1)P*R}{\alpha^2)(P+R)}$$</p>
+<p>当 $\alpha = 1$ 时，即是我们最常用的F1_Score</p>
+<p>$$\ F_1= \frac{2PR}{(P+R)}$$</p>
+<p>因为 <strong> $ F_1$ </strong> 综合了 Precision 和 Recall 的结果，所以当 <strong> $F_1$ 或者 <em>F_Score</em> </strong> 较高时，说明结果较为理想。</p>
+<h2 id="AUC-Area-under-the-ROC-curve"><a href="#AUC-Area-under-the-ROC-curve" class="headerlink" title="AUC(Area under the ROC curve)"></a>AUC(Area under the ROC curve)</h2><p>呜啦啦，我最近涉及到的最后一个指标啦。在介绍<strong>AUC</strong>之前，首先要了解什么是 <strong>ROC曲线</strong>，他是这个样子滴。ROC曲线上的每一个点对应于一个 <strong>threshold</strong>，对于一个分类器，<strong>每个threshold下会有一个TPR和FPR</strong>。</p>
+<p>这里的 <strong>threshold</strong>怎么理解呢？举一个简单的例子：对于某个二分类分类器来说，输出结果 <strong>是0还是1</strong>，往往取决于输出的概率以及预定的概率阈值，比如常见的阈值就是0.5，大于0.5的认为是正样本，小于0.5的认为是负样本。</p>
 <ul>
-<li><p>进入根目录</p>
-<p>  <code>cd ～/</code></p>
-</li>
-<li><p>进入.pip目录</p>
-<p>  <code>cd .pip</code></p>
-</li>
-<li><p>若不存在就新建一个呗，然后再进入.pip目录</p>
-<p>  <code>mkdir .pip</code></p>
-<p>  <code>cd .pip</code></p>
-</li>
-<li><p>创建pip的配置文件pip.conf(configure)</p>
-<p>  <code>touch pip.conf</code></p>
-</li>
-<li><p>运用vim修改pip.conf</p>
-<p>  <code>vim pip.conf</code></p>
-</li>
+<li>横轴：False Positive Rate（假阳率，FPR）</li>
+<li>纵轴：True Positive Rate（真阳率，TPR） </li>
 </ul>
-<p>那么，要改些什么呢？首先，任意按下 <strong>i、I、a、A、o、O、s、S</strong> 进入插入模式，<strong>复制下面的内容到pip.conf</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[global]</span><br><span class="line">index-url = https://pypi.tuna.tsinghua.edu.cn/simple</span><br><span class="line">[install]</span><br><span class="line">trusted-host= pypi.tuna.tsinghua.edu.cn</span><br></pre></td></tr></table></figure>
-<p>然后，按下 <strong>esc</strong>，退出 <strong>insert</strong> 模式后，输入 :wq，即可保存并退出 <strong>pip.conf</strong><br>我自己是用的清华的源，国内还是有很多可以用的镜像源，比较推荐的是高校的镜像源，当然还有阿里，豆瓣的镜像源都是可以的。</p>
-<p>最后，如果想要通过 pip安装什么包，可以直接运行以下命令（<strong>以安装tensorflow1.8为例</strong>）</p>
+<p><img src="/2018/08/15/Tensorflow-tf-metrics/WechatIMG137.png" alt=""></p>
+<p>理解了 <strong>ROC曲线</strong>之后，<strong>AUC</strong>就很好理解啦，其指的就是<strong>ROC曲线包围的面积啦</strong>，也就是图中的绿色部分。<br><strong>ROC曲线</strong>一定程度上可以反映分类器的分类效果，但是不够直观，我们希望有一个直观的指标，我们可以通过观察其数值的大小，直接判断分类器的分类性能，于是AUC横空出世啦。AUC可以直观地反映了ROC曲线表达的分类能力。</p>
 <ul>
-<li><p>python2 </p>
-<p>  <code>pip install tensorflow==1.8</code></p>
-</li>
-<li><p>python3 </p>
-<p>  <code>pip3 install tensorflow==1.8</code>   </p>
-</li>
+<li>AUC ＝ 1，代表完美分类器</li>
+<li>0.5 &lt; AUC &lt; 1，优于随机分类器</li>
+<li>0 &lt; AUC &lt; 0.5，差于随机分类器</li>
 </ul>
-<p>上一张图，感受一下速度</p>
-<p><img src="/2018/08/15/VSCode-tricks/WechatIMG163.png" alt=""></p>
-<h2 id="加速访问Github"><a href="#加速访问Github" class="headerlink" title="加速访问Github"></a>加速访问Github</h2><p>之前一直觉着Github的访问速度比较慢，但是出于懒以及小白属性，所以也从来没管过，直到有一天，我的代码死活push不上去，我这个难受的哇，间歇性强迫症重出江湖。然后我就开始了瞎鼓捣，又是七七八八一通瞎弄，算是搞定了。其中最主要修改的是 <strong>hosts</strong> 。</p>
-<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><p>首先，点击这个<a href="https://www.ipaddress.com/" target="_blank" rel="noopener">域名解析网站</a>，查询以下两个域名对应的IP地址</p>
-<ul>
-<li>github.com</li>
-<li>github.global.ssl.fastly.net</li>
-</ul>
-<p>得到域名对应的IP地址之后，接下来的步骤如下</p>
-<h3 id="具体步骤"><a href="#具体步骤" class="headerlink" title="具体步骤"></a>具体步骤</h3><ul>
-<li><p>进入/etc</p>
-<p>  <code>cd /etc</code></p>
-</li>
-<li><p>运用vim，修改hosts</p>
-<p>  <code>sudo vim hosts</code></p>
-</li>
-<li><p>添加如下内容</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">192.30.253.112 github.com</span><br><span class="line">151.101.13.194 github.global.ssl.fastly.net</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>最后，更新DNS缓存</p>
-<p>  <code>sudo dscacheutil -flushcache</code></p>
-</li>
-</ul>
-<p><strong>P.S</strong>:添加的IP地址可能不一样，可以根据域名解析网站自行设置</p>
-<p>上面步骤完成之后，我们就可以愉快嗨皮地访问 <strong>Github</strong> 啦，并且我们还可以运用 <strong>VS Code</strong>内置的 <strong>GIT</strong> 愉快滴和 <strong>Github</strong> 进行远程关联，包括 <strong>git clone/git push</strong> 等一系列操作。</p>
-<p>如果大噶有需求的话，我下次再写一个 <strong>小白说git</strong>（好吧，其实是我自己有点写上瘾了）</p>
-<p>还是一样的，大噶要是发现什么问题，一定告诉我，一起进步。</p>
+<p>好气哦，每次总是越写越多（苦笑脸），正文还没有写，就已经七七八八敲了一堆，澜子要去赶车了，正文放在下一篇继续。</p>
+<p>大噶发现错误或者什么我理解得不对的地方，一定要告诉我啊，不能让我一直瞎写啊。</p>
 
       
     </div>
@@ -454,7 +436,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/VS-Code/" rel="tag"><i class="fa fa-tag"></i>VS Code</a>
+            <a href="/tags/Tensorflow/" rel="tag"><i class="fa fa-tag"></i>Tensorflow</a>
           
         </div>
       
@@ -467,8 +449,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/08/15/Tensorflow-tf-metrics/" rel="next" title="Tensorflow-tf-metrics">
-                <i class="fa fa-chevron-left"></i> Tensorflow-tf-metrics
+              <a href="/2018/08/15/MAC-VSCODE-python-markdown/" rel="next" title="MAC_VSCODE_Python/Markdown">
+                <i class="fa fa-chevron-left"></i> MAC_VSCODE_Python/Markdown
               </a>
             
           </div>
@@ -476,6 +458,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/08/15/VSCode-tricks/" rel="prev" title="VSCode_tricks">
+                VSCode_tricks <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -626,7 +612,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#pip换源"><span class="nav-number">1.</span> <span class="nav-text">pip换源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#加速访问Github"><span class="nav-number">2.</span> <span class="nav-text">加速访问Github</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#准备工作"><span class="nav-number">2.1.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#具体步骤"><span class="nav-number">2.2.</span> <span class="nav-text">具体步骤</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#评价指标简介"><span class="nav-number">1.</span> <span class="nav-text">评价指标简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#混淆矩阵"><span class="nav-number">1.1.</span> <span class="nav-text">混淆矩阵</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#准确率（Accuracy）"><span class="nav-number">1.2.</span> <span class="nav-text">准确率（Accuracy）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#精确率（Precision）"><span class="nav-number">1.3.</span> <span class="nav-text">精确率（Precision）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#召回率（Recall）"><span class="nav-number">1.4.</span> <span class="nav-text">召回率（Recall）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#F-Score"><span class="nav-number">2.</span> <span class="nav-text">F_Score</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AUC-Area-under-the-ROC-curve"><span class="nav-number">3.</span> <span class="nav-text">AUC(Area under the ROC curve)</span></a></li></ol></div>
             
 
           </div>
