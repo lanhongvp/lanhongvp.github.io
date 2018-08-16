@@ -306,7 +306,7 @@ hr {
 }
 blockquote {
   padding: 0 15px;
-  color: #f08080;
+  color: #666;
   border-left: 4px solid #ddd;
 }
 blockquote cite::before {
@@ -425,7 +425,7 @@ td {
 th,
 td {
   border-bottom: 3px solid #ddd;
-  border-right: 1px solid #f08080;
+  border-right: 1px solid #bbb;
 }
 th {
   padding-bottom: 10px;
@@ -499,7 +499,7 @@ code {
   padding: 2px 4px;
   word-wrap: break-word;
   color: #555;
-  background: #f08080;
+  background: #bbb;
   border-radius: 3px;
   font-size: 13px;
 }
@@ -745,7 +745,7 @@ pre .javascript .function {
   position: relative;
   padding: 15px;
   margin-bottom: 20px;
-  border: 1px solid #f08080;
+  border: 1px solid #bbb;
   border-left-width: 5px;
   border-radius: 3px;
 }
@@ -976,7 +976,7 @@ pre .javascript .function {
 .pagination {
   margin: 120px 0 40px;
   text-align: center;
-  border-top: 1px solid #f08080;
+  border-top: 1px solid #bbb;
 }
 .page-number-basic,
 .pagination .prev,
@@ -1002,7 +1002,7 @@ pre .javascript .function {
 .pagination .next,
 .pagination .page-number {
   border-bottom: 0;
-  border-top: 1px solid #f08080;
+  border-top: 1px solid #bbb;
   transition-property: border-color;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
@@ -1037,7 +1037,7 @@ pre .javascript .function {
   .pagination .page-number {
     margin-bottom: 10px;
     border-top: 0;
-    border-bottom: 1px solid #f08080;
+    border-bottom: 1px solid #bbb;
     padding: 0 10px;
   }
   .pagination .prev:hover,
@@ -1419,7 +1419,7 @@ pre .javascript .function {
   transition-property: background;
 }
 .posts-collapse .post-header:hover {
-  border-bottom-color: #f08080;
+  border-bottom-color: #666;
 }
 .posts-collapse .post-header:hover::before {
   background: #f08080;
@@ -1444,7 +1444,7 @@ pre .javascript .function {
   opacity: 0.6;
 }
 .posts-collapse .post-title a {
-  color: #f08080;
+  color: #666;
   border-bottom: none;
 }
 .page-home .post-type-quote .post-header,
@@ -1561,7 +1561,7 @@ pre .javascript .function {
   display: table;
   margin-top: 15px;
   width: 100%;
-  border-top: 1px solid #f08080;
+  border-top: 1px solid #bbb;
 }
 .post-nav-divider {
   display: table-cell;
@@ -1675,7 +1675,7 @@ pre .javascript .function {
   border-bottom-color: #555;
 }
 .sidebar a:hover {
-  color: #f08080;
+  color: #bbb;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .sidebar {
@@ -1741,7 +1741,7 @@ pre .javascript .function {
   padding: 2px;
   max-width: 120px;
   height: auto;
-  border: 1px solid #f08080;
+  border: 1px solid #bbb;
   border-radius: 80px;
   -webkit-border-radius: 80px;
   -moz-border-radius: 80px;
@@ -1768,7 +1768,7 @@ pre .javascript .function {
 .site-state-item {
   display: inline-block;
   padding: 0 15px;
-  border-left: 1px solid #f08080;
+  border-left: 1px solid #bbb;
 }
 .site-state-item:first-child {
   border-left: none;
@@ -1827,7 +1827,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fffa8f;
+  background: #2b57f4;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -1888,7 +1888,7 @@ pre .javascript .function {
 }
 .post-toc-empty {
   font-size: 14px;
-  color: #f08080;
+  color: #666;
 }
 .post-toc-wrap {
   overflow: hidden;
@@ -1911,7 +1911,7 @@ pre .javascript .function {
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
   transition-property: all;
-  color: #f08080;
+  color: #666;
   border-bottom-color: #f08080;
 }
 .post-toc ol a:hover {
@@ -2944,7 +2944,7 @@ pre .javascript .function {
 }
 .links-of-author-item a:hover {
   border-radius: 4px;
-  background: #f08080;
+  background: #bbb;
 }
 .links-of-author-item .fa {
   margin-right: 2px;
