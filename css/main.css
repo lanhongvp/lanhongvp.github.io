@@ -906,7 +906,7 @@ pre .javascript .function {
   width: 1.285714285714286em;
 }
 .post-body .tabs ul.nav-tabs li.tab.active {
-  border-top: 3px solid #fc6423;
+  border-top: 3px solid #f08080;
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
   background-color: #fff;
@@ -914,7 +914,7 @@ pre .javascript .function {
 @media (max-width: 413px) {
   .post-body .tabs ul.nav-tabs li.tab.active {
     border-top: 1px solid #ddd;
-    border-left: 3px solid #fc6423;
+    border-left: 3px solid #f08080;
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
   }
@@ -1827,7 +1827,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #05ffff;
+  background: #fffa8f;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -1865,7 +1865,7 @@ pre .javascript .function {
   color: #555;
 }
 .sidebar-nav li:hover {
-  color: #fc6423;
+  color: #f08080;
 }
 .page-post-detail .sidebar-nav-toc {
   padding: 0 5px;
@@ -1874,11 +1874,11 @@ pre .javascript .function {
   margin-left: 10px;
 }
 .sidebar-nav .sidebar-nav-active {
-  color: #fc6423;
-  border-bottom-color: #fc6423;
+  color: #f08080;
+  border-bottom-color: #f08080;
 }
 .sidebar-nav .sidebar-nav-active:hover {
-  color: #fc6423;
+  color: #f08080;
 }
 .sidebar-panel {
   display: none;
@@ -1938,14 +1938,14 @@ pre .javascript .function {
   display: block;
 }
 .post-toc .nav .active > a {
-  color: #fc6423;
-  border-bottom-color: #fc6423;
+  color: #f08080;
+  border-bottom-color: #f08080;
 }
 .post-toc .nav .active-current > a {
-  color: #fc6423;
+  color: #f08080;
 }
 .post-toc .nav .active-current > a:hover {
-  color: #fc6423;
+  color: #f08080;
 }
 .footer {
   font-size: 14px;
@@ -2595,7 +2595,7 @@ pre .javascript .function {
   }
 }
 .page-post-detail .sidebar-toggle-line {
-  background: #fc6423;
+  background: #f08080;
 }
 .page-post-detail .comments {
   overflow: hidden;
@@ -2908,15 +2908,15 @@ pre .javascript .function {
 }
 .feed-link a {
   display: block;
-  color: #fc6423;
+  color: #f08080;
   border: none;
 }
 .feed-link a:hover {
   background: none;
-  color: #e34603;
+  color: #e83e3e;
 }
 .feed-link a:hover i {
-  color: #e34603;
+  color: #e83e3e;
 }
 .links-of-author {
   display: flex;
