@@ -83,7 +83,7 @@
 
 
 
-  <meta name="keywords" content="Tensorflow," />
+  <meta name="keywords" content="VS Code," />
 
 
 
@@ -94,25 +94,33 @@
 
 
 
-<meta name="description" content="作为一名小白中的小白（苦笑脸），澜子的每一步都走得艰难万分（哭），好在身边还是有很靠谱的小伙伴能给我很多帮助，能让我艰难且缓慢无比的进度得到不小的提升。所以，对于最近踩坑很多的 tf.metrics，特地记录一下。当然，如果大噶发现博客中我理解过程中的任何错误，一定记得告诉我啊，这样才能更好地进步哇。 之所以会接触到这个API，是因为最近在做一个二分类的问题，然后希望用多个评价指标包括：召回率（R">
-<meta name="keywords" content="Tensorflow">
+<meta name="description" content="lalala，澜子我又回来啦，这一次就说说 Git和Github 吧。Github作为全球最大的同性交友网站，广大女性盆友们难道都不了解一下嘛。  先解决一个问题：如果我不写代码，还需要用 Git和Github嘛？—需要（划重点）  不知道大噶有没有遇到过这样的情况，在写论文尤其是毕业论文的时候，需要不断反复修改，直到最后，改到头晕脑涨，也不知道改到了哪一版，就像图中那样。  然后呢，打印论文">
+<meta name="keywords" content="VS Code">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Tensorflow-tf-metrics">
-<meta property="og:url" content="http://yoursite.com/2018/08/15/Tensorflow-tf-metrics/index.html">
+<meta property="og:title" content="VSCODE_GIT">
+<meta property="og:url" content="http://yoursite.com/2018/08/16/VSCODE-GIT/index.html">
 <meta property="og:site_name" content="Lan Hong">
-<meta property="og:description" content="作为一名小白中的小白（苦笑脸），澜子的每一步都走得艰难万分（哭），好在身边还是有很靠谱的小伙伴能给我很多帮助，能让我艰难且缓慢无比的进度得到不小的提升。所以，对于最近踩坑很多的 tf.metrics，特地记录一下。当然，如果大噶发现博客中我理解过程中的任何错误，一定记得告诉我啊，这样才能更好地进步哇。 之所以会接触到这个API，是因为最近在做一个二分类的问题，然后希望用多个评价指标包括：召回率（R">
+<meta property="og:description" content="lalala，澜子我又回来啦，这一次就说说 Git和Github 吧。Github作为全球最大的同性交友网站，广大女性盆友们难道都不了解一下嘛。  先解决一个问题：如果我不写代码，还需要用 Git和Github嘛？—需要（划重点）  不知道大噶有没有遇到过这样的情况，在写论文尤其是毕业论文的时候，需要不断反复修改，直到最后，改到头晕脑涨，也不知道改到了哪一版，就像图中那样。  然后呢，打印论文">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://yoursite.com/2018/08/15/Tensorflow-tf-metrics/WechatIMG136.png">
-<meta property="og:image" content="http://yoursite.com/2018/08/15/Tensorflow-tf-metrics/WechatIMG132.png">
-<meta property="og:image" content="http://yoursite.com/2018/08/15/Tensorflow-tf-metrics/WechatIMG133.png">
-<meta property="og:image" content="http://yoursite.com/2018/08/15/Tensorflow-tf-metrics/WechatIMG134.png">
-<meta property="og:image" content="http://yoursite.com/2018/08/15/Tensorflow-tf-metrics/WechatIMG135.png">
-<meta property="og:image" content="http://yoursite.com/2018/08/15/Tensorflow-tf-metrics/WechatIMG137.png">
-<meta property="og:updated_time" content="2018-08-15T06:21:33.921Z">
+<meta property="og:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/2.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/4.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/5.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/3.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/8.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/9.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/10.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/11.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/12.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/13.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/14.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/15.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/16.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/17.png">
+<meta property="og:updated_time" content="2018-08-16T14:26:22.172Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Tensorflow-tf-metrics">
-<meta name="twitter:description" content="作为一名小白中的小白（苦笑脸），澜子的每一步都走得艰难万分（哭），好在身边还是有很靠谱的小伙伴能给我很多帮助，能让我艰难且缓慢无比的进度得到不小的提升。所以，对于最近踩坑很多的 tf.metrics，特地记录一下。当然，如果大噶发现博客中我理解过程中的任何错误，一定记得告诉我啊，这样才能更好地进步哇。 之所以会接触到这个API，是因为最近在做一个二分类的问题，然后希望用多个评价指标包括：召回率（R">
-<meta name="twitter:image" content="http://yoursite.com/2018/08/15/Tensorflow-tf-metrics/WechatIMG136.png">
+<meta name="twitter:title" content="VSCODE_GIT">
+<meta name="twitter:description" content="lalala，澜子我又回来啦，这一次就说说 Git和Github 吧。Github作为全球最大的同性交友网站，广大女性盆友们难道都不了解一下嘛。  先解决一个问题：如果我不写代码，还需要用 Git和Github嘛？—需要（划重点）  不知道大噶有没有遇到过这样的情况，在写论文尤其是毕业论文的时候，需要不断反复修改，直到最后，改到头晕脑涨，也不知道改到了哪一版，就像图中那样。  然后呢，打印论文">
+<meta name="twitter:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/2.png">
 
 
 
@@ -142,13 +150,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/08/15/Tensorflow-tf-metrics/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/08/16/VSCODE-GIT/"/>
 
 
 
 
 
-  <title>Tensorflow-tf-metrics | Lan Hong</title>
+  <title>VSCODE_GIT | Lan Hong</title>
   
 
 
@@ -295,7 +303,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/15/Tensorflow-tf-metrics/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/16/VSCODE-GIT/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Lan Hong">
@@ -312,7 +320,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Tensorflow-tf-metrics</h1>
+          <h1 class="post-title" itemprop="name headline">VSCODE_GIT</h1>
         
 
         <div class="post-meta">
@@ -324,8 +332,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-08-15T13:04:58+08:00">
-                2018-08-15
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-08-16T16:29:53+08:00">
+                2018-08-16
               </time>
             
 
@@ -347,8 +355,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Tensorflow/" itemprop="url" rel="index">
-                    <span itemprop="name">Tensorflow</span>
+                  <a href="/categories/TOOLS/" itemprop="url" rel="index">
+                    <span itemprop="name">TOOLS</span>
                   </a>
                 </span>
 
@@ -365,8 +373,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/08/15/Tensorflow-tf-metrics/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/08/15/Tensorflow-tf-metrics/" itemprop="commentCount"></span>
+                <a href="/2018/08/16/VSCODE-GIT/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/08/16/VSCODE-GIT/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -399,49 +407,85 @@
       
 
       
-        <p>作为一名小白中的小白（苦笑脸），澜子的每一步都走得艰难万分（哭），好在身边还是有很靠谱的小伙伴能给我很多帮助，能让我艰难且缓慢无比的进度得到不小的提升。<br>所以，对于最近踩坑很多的 <strong>tf.metrics</strong>，特地记录一下。<br>当然，如果大噶发现博客中我理解过程中的任何错误，一定记得告诉我啊，这样才能更好地进步哇。</p>
-<p>之所以会接触到这个API，是因为最近在做一个二分类的问题，然后希望用多个评价指标包括：<strong>召回率（Recall），精确率（Precision），F_Score，AUC</strong>对模型进行综合评估，而不仅仅只是<strong>准确率（Accuracy）</strong> 的单一指标。</p>
-<h2 id="评价指标简介"><a href="#评价指标简介" class="headerlink" title="评价指标简介"></a>评价指标简介</h2><h3 id="混淆矩阵"><a href="#混淆矩阵" class="headerlink" title="混淆矩阵"></a>混淆矩阵</h3><p>混淆矩阵是理解众多评价指标的基础。先贴一张图，经典的混淆矩阵是长这个样子滴。</p>
-<p><img src="/2018/08/15/Tensorflow-tf-metrics/WechatIMG136.png" alt=""></p>
-<p>理解混淆矩阵以及下文所涉及到的其他的评价指标之前，我们首先要了解一下 <strong>TP,FP,TN,FN</strong> 这四个被广泛应用于二分类评价中的基本概念。<a href="http://ronny.rest/blog/post_2018_01_26_precision_recall/" target="_blank" rel="noopener">这一篇文章</a> 图文并茂，解释得很不错，我也截取了几张很好看的图，会依次出现在后续的文章中。下图便很好地解释了四个基本概念。</p>
-<p><img src="/2018/08/15/Tensorflow-tf-metrics/WechatIMG132.png" alt=""></p>
+        <p>lalala，澜子我又回来啦，这一次就说说 <strong>Git和Github</strong> 吧。Github作为全球最大的同性交友网站，广大女性盆友们难道都不了解一下嘛。<br></p>
 <ul>
-<li>TP：True Positive，预测为正例，实际也为正例。</li>
-<li>FP：False Positive，预测为正例，实际却为负例。</li>
-<li>TN：True Negative，预测为负例，实际也为负例。</li>
-<li>FN：False Negative，预测为负例，实际却为正例。</li>
+<li>先解决一个问题：如果我不写代码，还需要用 <strong>Git和Github嘛</strong>？—<strong>需要（划重点）</strong></li>
 </ul>
-<h3 id="准确率（Accuracy）"><a href="#准确率（Accuracy）" class="headerlink" title="准确率（Accuracy）"></a>准确率（Accuracy）</h3><p>首先上图一张，颜值即正义，有这么好看的图，应该很好理解其中的含义吧。<strong>准确率</strong> 即指所有预测正确的样本（无论预测的是正例还是负例）占所有样本的比例。</p>
-<p><img src="/2018/08/15/Tensorflow-tf-metrics/WechatIMG133.png" alt=""></p>
-<h3 id="精确率（Precision）"><a href="#精确率（Precision）" class="headerlink" title="精确率（Precision）"></a>精确率（Precision）</h3><p>高颜值的美图继续。精确率就是指 <strong>当前划分到正样本类别中，被正确分类的比例，即真正的正样本所占所有预测为正样本的比例。</strong></p>
-<p>其实我自己在没有真正运用这些指标之前，并不是很理解其中的含义。针对我自己这段时间的经历，我的理解是 <strong>运用精确率，可以发现模型的潜在问题：比如我自己第一个尝试的模型，就出现了模型的预测输出一直为零的情况</strong>。但是，由于我之前并没有加入精确率的指标，只关注了模型的准确率，导致模型的准确率结果<strong>虽然有90%，但是精确率出现了NAN</strong>。</p>
-<p>我自己分析出现这个结果的原因是：第一，样本的数据量很大且比较稀疏；第二，小白如我在数据预处理方面做得很糟糕，导致数据分布就很不合理，也就意味着会出现 <strong>一个batch里面label中0的数量远大于1，进而模型一直在学0的情况</strong>。而我们如果仅仅只看准确率，模型似乎没有那么糟糕，然而其实模型的效果是很差的，准确率没有很低只是因为batch本身比较稀疏，所以就算模型输出一直是零，也不会出现很低的准确率。那么，有了 <strong>精确率</strong> 就够了吗？当然不是，我们接着看一个简单的例子。</p>
-<p>比如：我们有一个样本数量为50的数据集，其中正样本的数量为20。但是，在我们所有的预测结果中，只预测出了一个正样本，并且这个样本也确实是正样本，那么 <strong>TP=1，FP=0，Precision = TP/(TP+FP) = 1.0</strong>，那么我们的模型是不是就很好了呢？当然不是，我们还有19个正样本都没有预测成功呢。所以，是时候使出 <strong>召回率</strong> 这一绝招啦。</p>
-<p><img src="/2018/08/15/Tensorflow-tf-metrics/WechatIMG134.png" alt=""></p>
-<h3 id="召回率（Recall）"><a href="#召回率（Recall）" class="headerlink" title="召回率（Recall）"></a>召回率（Recall）</h3><p>美图接着上。召回率即指 <strong>当前被分到正样本类别中，真实的正样本占所有正样本的比例，即召回了多少正样本的比例。</strong></p>
-<p><img src="/2018/08/15/Tensorflow-tf-metrics/WechatIMG135.png" alt=""></p>
-<p>接着上文继续说，精确率和召回率之间存在着什么关系呢？我们当然希望 <strong>Precision 和 Recall</strong> 的值越高越好。在上文的例子中，我们得到模型的精确率为1，但并不表示模型就很好，因为 <strong>FN=19</strong>，可以得到 <strong>召回率 Recall = TP/(TP+FN)= 0.05</strong>。所以，如果仅仅只靠精确率，显然也是不够的。</p>
-<p>那么问题又来了，有没有一个能够结合两者的评价指标呢？必杀技 <strong>F_Score</strong> 来也。</p>
-<h2 id="F-Score"><a href="#F-Score" class="headerlink" title="F_Score"></a>F_Score</h2><p>此处没有美图了。F_Score其实就是 Precision和 Recall的加权调和平均：</p>
-<p>$$\ F= \frac{(\alpha^2+1)P*R}{\alpha^2)(P+R)}$$</p>
-<p>当 $\alpha = 1$ 时，即是我们最常用的F1_Score</p>
-<p>$$\ F_1= \frac{2PR}{(P+R)}$$</p>
-<p>因为 <strong> $ F_1$ </strong> 综合了 Precision 和 Recall 的结果，所以当 <strong> $F_1$ 或者 <em>F_Score</em> </strong> 较高时，说明结果较为理想。</p>
-<h2 id="AUC-Area-under-the-ROC-curve"><a href="#AUC-Area-under-the-ROC-curve" class="headerlink" title="AUC(Area under the ROC curve)"></a>AUC(Area under the ROC curve)</h2><p>呜啦啦，我最近涉及到的最后一个指标啦。在介绍<strong>AUC</strong>之前，首先要了解什么是 <strong>ROC曲线</strong>，他是这个样子滴。ROC曲线上的每一个点对应于一个 <strong>threshold</strong>，对于一个分类器，<strong>每个threshold下会有一个TPR和FPR</strong>。</p>
-<p>这里的 <strong>threshold</strong>怎么理解呢？举一个简单的例子：对于某个二分类分类器来说，输出结果 <strong>是0还是1</strong>，往往取决于输出的概率以及预定的概率阈值，比如常见的阈值就是0.5，大于0.5的认为是正样本，小于0.5的认为是负样本。</p>
+<p>不知道大噶有没有遇到过这样的情况，在写论文尤其是毕业论文的时候，需要不断反复修改，直到最后，改到头晕脑涨，也不知道改到了哪一版，就像图中那样。</p>
+<p><img src="/2018/08/16/VSCODE-GIT/2.png" alt=""></p>
+<p>然后呢，打印论文的时候还很可能打印的不是最终版，直接导致哭晕在打印店。到了这个时候，我就要使出绝技 <strong>Github和Git</strong> 啦。</p>
+<p>说实话，一开始的时候我完全不懂什么是 <strong>Git</strong>，什么是 <strong>Github</strong>，还以为这两个只是名字不同而已，也不知道这些个东西是用来干什么的，但是秉承着什么东西都喜欢瞎鼓捣的性格(Zhuang Bi)，硬是想要用用看，所以今天捏，就想给大家说一说 <strong>Git和Github</strong> 几个最常用的功能吧。</p>
+<h2 id="简单说说Git和Github"><a href="#简单说说Git和Github" class="headerlink" title="简单说说Git和Github"></a>简单说说Git和Github</h2><h3 id="Git官方解释"><a href="#Git官方解释" class="headerlink" title="Git官方解释"></a>Git官方解释</h3><blockquote>
+<p>Git 是由 Linux 之父 Linus Tovalds 为了更好地管理linux内核开发而创立的分布式版本控制／软件配置管理软件。<br></p>
+</blockquote>
+<p>此处是看了解释之后仍然无比蒙圈的大澜。直到很久很久之后，我才逐步开始理解Git的作用。Git的特别之处就是 <strong>他记录的不是文件本身，而是文件的改变</strong>。可能又有盆友想说，这又有什么特别的嘛？就是因为记录的是改变，所以针对上文版本杂乱的论文，如果我们用了 <strong>Git</strong>，一个文件就能解决你所有烦恼。</p>
+<h3 id="Github-来也"><a href="#Github-来也" class="headerlink" title="Github 来也"></a>Github 来也</h3><p>首先，Github是基于Git的一个 <strong>全球最大的同性交友网站</strong>。那么，我们能用它来干什么呢？<br>那当然是 <strong>晒美照，找代码，建博客，还可以看看全世界的大佬们都在干什么</strong>。<br>先贴一张我刚刚建好的 <strong>粉色系少女博客的首页</strong>，</p>
+<h2 id="Git和Github怎么用呢"><a href="#Git和Github怎么用呢" class="headerlink" title="Git和Github怎么用呢"></a>Git和Github怎么用呢</h2><h3 id="先去最大的同性交友网站上看看呗"><a href="#先去最大的同性交友网站上看看呗" class="headerlink" title="先去最大的同性交友网站上看看呗"></a>先去最大的同性交友网站上看看呗</h3><ul>
+<li><a href="https://github.com/" target="_blank" rel="noopener">官网在这里</a></li>
+<li>这边给出<a href="https://guides.github.com/activities/hello-world/" target="_blank" rel="noopener">Github的官方文档</a>，可以帮助大噶很好地了解怎么使用Github。作为小白的我，暂时只用到了图中的这一部分，如果大家也是刚刚开始使用，暂时应该也只会涉及到第一步。<br><img src="/2018/08/16/VSCODE-GIT/4.png" alt=""></li>
+</ul>
+<p>图中画红框的两个部分：</p>
 <ul>
-<li>横轴：False Positive Rate（假阳率，FPR）</li>
-<li>纵轴：True Positive Rate（真阳率，TPR） </li>
+<li>如果添加了 <strong>Add.gitignore</strong> ，则表明告诉Github，从本地上传至Github时需要忽略的文件。</li>
+<li>如果添加了 <strong>Add license</strong> ，表明这个仓库不同等级的许可行为。<br>对于小白的我，这两个暂时都用不到。仓库创建完成之后，就是下图的样子啦。<br><img src="/2018/08/16/VSCODE-GIT/5.png" alt=""></li>
 </ul>
-<p><img src="/2018/08/15/Tensorflow-tf-metrics/WechatIMG137.png" alt=""></p>
-<p>理解了 <strong>ROC曲线</strong>之后，<strong>AUC</strong>就很好理解啦，其指的就是<strong>ROC曲线包围的面积啦</strong>，也就是图中的绿色部分。<br><strong>ROC曲线</strong>一定程度上可以反映分类器的分类效果，但是不够直观，我们希望有一个直观的指标，我们可以通过观察其数值的大小，直接判断分类器的分类性能，于是AUC横空出世啦。AUC可以直观地反映了ROC曲线表达的分类能力。</p>
-<ul>
-<li>AUC ＝ 1，代表完美分类器</li>
-<li>0.5 &lt; AUC &lt; 1，优于随机分类器</li>
-<li>0 &lt; AUC &lt; 0.5，差于随机分类器</li>
-</ul>
-<p>好气哦，每次总是越写越多（苦笑脸），正文还没有写，就已经七七八八敲了一堆，澜子要去赶车了，正文放在下一篇继续。</p>
-<p>大噶发现错误或者什么我理解得不对的地方，一定要告诉我啊，不能让我一直瞎写啊。</p>
+<p>这一步做完之后，我们就是一个 <strong>萌新Githuber</strong> 啦，那么接下来呢，就是要和我们的本地仓库进行关联和同步啦。</p>
+<h3 id="在VS-Code用Git"><a href="#在VS-Code用Git" class="headerlink" title="在VS Code用Git"></a>在VS Code用Git</h3><p>VS Code里是直接集成了Git，如果不用VS Code的同学，需要自行下载 <strong>Git</strong>，具体的安装步骤网上还是很多的，既可以直接安装包安装，也可以命令行安装，在此就不细说了。这里给出<a href="https://git-scm.com/" target="_blank" rel="noopener">Git的官网</a>。<br>接下来的操作都是在 <strong>VSCode的终端</strong> 进行的，当然也可以直接用VS Code自带的界面直接操作，下图中的按钮对应的就是VSCode的Git部分，但是我这边应该是之前配置出了问题，导致无法同步Github，所以目前在用终端与Github同步。</p>
+<p><img src="/2018/08/16/VSCODE-GIT/3.png" alt=""></p>
+<h4 id="配置专属SSH-key"><a href="#配置专属SSH-key" class="headerlink" title="配置专属SSH key"></a>配置专属SSH key</h4><p>SSH key是个神马东西捏？大澜现在的理解就是：有了这个专属key，才可以实现身份的认证，然后才能正常地push到Github。</p>
+<blockquote>
+<p>ssh-keygen -t rsa -C <a href="mailto:945086071@qq.com" target="_blank" rel="noopener">945086071@qq.com</a></p>
+</blockquote>
+<p><code>-C</code> 后面替换成你自己注册 <strong>Github时申请的邮箱</strong>。然后一路<code>enter</code>，你的专属SSH key就生成啦。成功生成的图片是这样子的。<br><img src="/2018/08/16/VSCODE-GIT/8.png" alt=""><br>大澜是因为之前生成过SSH key，所以出现<strong>overwrite</strong> 部分。</p>
+<h4 id="让我们把SSH-key贴到Github上吧"><a href="#让我们把SSH-key贴到Github上吧" class="headerlink" title="让我们把SSH key贴到Github上吧"></a>让我们把SSH key贴到Github上吧</h4><blockquote>
+<p>cd /Users/honglan/.ssh/</p>
+</blockquote>
+<blockquote>
+<p>ls -al</p>
+</blockquote>
+<blockquote>
+<p>vim id_rsa.pub</p>
+</blockquote>
+<p>注意：第一条<code>cd</code>命令的路径是你SSH key生成的路径，如果是默认操作的话，直接修改<code>honglan</code>为自身电脑对应的用户名。操作如下。<br><img src="/2018/08/16/VSCODE-GIT/9.png" alt=""></p>
+<p>直接复制 <strong>第三条<code>vim</code>命令运行结束后出现的内容</strong>，如第二张图红框部分。<br><img src="/2018/08/16/VSCODE-GIT/10.png" alt=""></p>
+<p>复制结束，按<code>esc</code>后，输入<code>:q!</code>退出vim。</p>
+<p>将<code>id_rsa.pub</code>复制所得的内容粘贴到Github的SSH key中，具体的操作如下两张图所示。其中<code>title</code>可以随便取，<code>key</code>填的就是刚刚复制的公钥的内容。</p>
+<p><img src="/2018/08/16/VSCODE-GIT/11.png" alt=""></p>
+<p><img src="/2018/08/16/VSCODE-GIT/12.png" alt=""></p>
+<p>添加成功之后是这个样子的啦。</p>
+<p><img src="/2018/08/16/VSCODE-GIT/13.png" alt=""></p>
+<p>然后捏，在本地测试一下是否连接成功。</p>
+<blockquote>
+<p>ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a></p>
+</blockquote>
+<p>连接测试成功之后是这个样子的啦。<br><img src="/2018/08/16/VSCODE-GIT/14.png" alt=""></p>
+<p>至此，我们已经成功和Github通信啦，接下来就需要在本地进行后续的配置。</p>
+<h4 id="在本地配置Github吧"><a href="#在本地配置Github吧" class="headerlink" title="在本地配置Github吧"></a>在本地配置Github吧</h4><blockquote>
+<p>git config –global user.name lanhongvp</p>
+</blockquote>
+<blockquote>
+<p>git config –global user.email <a href="mailto:945086071@qq.com" target="_blank" rel="noopener">945086071@qq.com</a></p>
+</blockquote>
+<p>此处的 <strong>lanhongvp</strong>，替换成你注册 <strong>Github用户名</strong>。<br>此处的 <a href="mailto:**945086071@qq.com" target="_blank" rel="noopener">**945086071@qq.com</a><strong>，替换成你注册 </strong>Github时申请的邮箱**。</p>
+<h4 id="克隆Github远程仓库"><a href="#克隆Github远程仓库" class="headerlink" title="克隆Github远程仓库"></a>克隆Github远程仓库</h4><p><code>git clone</code>克隆远程仓库</p>
+<blockquote>
+<p>git clone <a href="https://github.com/lanhongvp/hello_github.git" target="_blank" rel="noopener">https://github.com/lanhongvp/hello_github.git</a></p>
+</blockquote>
+<p><code>git clone</code>之后的内容要换成<code>你自己github的地址，注意后缀.git不要忘记</code>,git clone之后的地址即是图中红框部分，但是不要忘记加后缀。<br><img src="/2018/08/16/VSCODE-GIT/15.png" alt=""></p>
+<p>这个时候，你已经成功的将远程仓库clone到本地了，接下来看看怎么传上去捏。</p>
+<h4 id="本地仓库上传Github"><a href="#本地仓库上传Github" class="headerlink" title="本地仓库上传Github"></a>本地仓库上传Github</h4><p>首先在本地仓库，新建一个markdown，随便写一点内容，我取名为<code>hello_github.md</code>，如图<br><img src="/2018/08/16/VSCODE-GIT/16.png" alt=""></p>
+<p>我们可以看到，此时本地仓库已经多了一个文件了，不再只是一个 <strong>Readme</strong>。然后，<strong>VS Code</strong>终端命令行输入：</p>
+<blockquote>
+<p>git add hello_github.md</p>
+</blockquote>
+<blockquote>
+<p>git commit -m “hello github”</p>
+</blockquote>
+<blockquote>
+<p>git push origin master</p>
+</blockquote>
+<p>其中，<code>git commit</code>可以简单填写这次提交的信息，便于后续版本查看的时候进行回忆。<br><code>git add</code>之后的内容要换成<code>你自己创建的文件的名字，可以直接tab补全文件名</code>，具体的操作如图中红框的部分：<br><img src="/2018/08/16/VSCODE-GIT/17.png" alt=""></p>
+<p>总算是写完了，累死大澜了，还有很多<code>Git</code>的使用，大噶可以去看看<a href="https://git-scm.com/" target="_blank" rel="noopener">官方网站</a>和<a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="noopener">廖雪峰的Git教程</a></p>
 
       
     </div>
@@ -459,7 +503,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Tensorflow/" rel="tag"><i class="fa fa-tag"></i>Tensorflow</a>
+            <a href="/tags/VS-Code/" rel="tag"><i class="fa fa-tag"></i>VS Code</a>
           
         </div>
       
@@ -472,8 +516,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/08/15/MAC-VSCODE-python-markdown/" rel="next" title="MAC_VSCODE_Python/Markdown">
-                <i class="fa fa-chevron-left"></i> MAC_VSCODE_Python/Markdown
+              <a href="/2018/08/15/VSCode-tricks/" rel="next" title="VSCode_tricks">
+                <i class="fa fa-chevron-left"></i> VSCode_tricks
               </a>
             
           </div>
@@ -481,10 +525,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/08/15/VSCode-tricks/" rel="prev" title="VSCode_tricks">
-                VSCode_tricks <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -645,7 +685,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#评价指标简介"><span class="nav-number">1.</span> <span class="nav-text">评价指标简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#混淆矩阵"><span class="nav-number">1.1.</span> <span class="nav-text">混淆矩阵</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#准确率（Accuracy）"><span class="nav-number">1.2.</span> <span class="nav-text">准确率（Accuracy）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#精确率（Precision）"><span class="nav-number">1.3.</span> <span class="nav-text">精确率（Precision）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#召回率（Recall）"><span class="nav-number">1.4.</span> <span class="nav-text">召回率（Recall）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#F-Score"><span class="nav-number">2.</span> <span class="nav-text">F_Score</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AUC-Area-under-the-ROC-curve"><span class="nav-number">3.</span> <span class="nav-text">AUC(Area under the ROC curve)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简单说说Git和Github"><span class="nav-number">1.</span> <span class="nav-text">简单说说Git和Github</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Git官方解释"><span class="nav-number">1.1.</span> <span class="nav-text">Git官方解释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Github-来也"><span class="nav-number">1.2.</span> <span class="nav-text">Github 来也</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git和Github怎么用呢"><span class="nav-number">2.</span> <span class="nav-text">Git和Github怎么用呢</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#先去最大的同性交友网站上看看呗"><span class="nav-number">2.1.</span> <span class="nav-text">先去最大的同性交友网站上看看呗</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在VS-Code用Git"><span class="nav-number">2.2.</span> <span class="nav-text">在VS Code用Git</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#配置专属SSH-key"><span class="nav-number">2.2.1.</span> <span class="nav-text">配置专属SSH key</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#让我们把SSH-key贴到Github上吧"><span class="nav-number">2.2.2.</span> <span class="nav-text">让我们把SSH key贴到Github上吧</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#在本地配置Github吧"><span class="nav-number">2.2.3.</span> <span class="nav-text">在本地配置Github吧</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#克隆Github远程仓库"><span class="nav-number">2.2.4.</span> <span class="nav-text">克隆Github远程仓库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#本地仓库上传Github"><span class="nav-number">2.2.5.</span> <span class="nav-text">本地仓库上传Github</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
