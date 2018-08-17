@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #FFF0F5; /*进度条颜色*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #FFF0F5, 0 0 5px     #FFF0F5; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #FFF0F5;    /*上边框颜色*/
+        border-left-color: #FFF0F5;    /*左边框颜色*/
+    }
+</style>
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.ico?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/favicon.ico?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="VS Code," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="lalala，澜子我又回来啦，这一次就说说 Git和Github 吧。Github作为全球最大的同性交友网站，广大女性盆友们难道都不了解一下嘛。  先解决一个问题：如果我不写代码，还需要用 Git和Github嘛？—需要（划重点）不知道大噶有没有遇到过这样的情况，在写论文尤其是毕业论文的时候，需要不断反复修改，直到最后，改到头晕脑涨，也不知道改到了哪一版，就像图中那样。   然后呢，打印论文的时">
+<meta name="keywords" content="VS Code">
+<meta property="og:type" content="article">
+<meta property="og:title" content="VSCODE_GIT">
+<meta property="og:url" content="http://yoursite.com/2018/08/16/VSCODE-GIT/index.html">
+<meta property="og:site_name" content="Hong Lan">
+<meta property="og:description" content="lalala，澜子我又回来啦，这一次就说说 Git和Github 吧。Github作为全球最大的同性交友网站，广大女性盆友们难道都不了解一下嘛。  先解决一个问题：如果我不写代码，还需要用 Git和Github嘛？—需要（划重点）不知道大噶有没有遇到过这样的情况，在写论文尤其是毕业论文的时候，需要不断反复修改，直到最后，改到头晕脑涨，也不知道改到了哪一版，就像图中那样。   然后呢，打印论文的时">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/2.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/4.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/5.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/3.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/8.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/9.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/10.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/11.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/12.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/13.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/14.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/15.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/16.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/17.png">
+<meta property="og:updated_time" content="2018-08-17T09:14:38.598Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="VSCODE_GIT">
+<meta name="twitter:description" content="lalala，澜子我又回来啦，这一次就说说 Git和Github 吧。Github作为全球最大的同性交友网站，广大女性盆友们难道都不了解一下嘛。  先解决一个问题：如果我不写代码，还需要用 Git和Github嘛？—需要（划重点）不知道大噶有没有遇到过这样的情况，在写论文尤其是毕业论文的时候，需要不断反复修改，直到最后，改到头晕脑涨，也不知道改到了哪一版，就像图中那样。   然后呢，打印论文的时">
+<meta name="twitter:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/2.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/08/16/VSCODE-GIT/"/>
+
+
+
+
+
+  <title>VSCODE_GIT | Hong Lan</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript"
+  color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+  
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <a href="https://github.com/lanhongvp" class="github-corner" aria-label="View source on Github">
+    <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#FFC0CB; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+    <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+    <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hong Lan</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/16/VSCODE-GIT/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Hong Lan">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/hl.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hong Lan">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">VSCODE_GIT</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-08-16T16:29:53+08:00">
+                2018-08-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/TOOLS/" itemprop="url" rel="index">
+                    <span itemprop="name">TOOLS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/16/VSCODE-GIT/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/08/16/VSCODE-GIT/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>lalala，澜子我又回来啦，这一次就说说 <strong>Git和Github</strong> 吧。Github作为全球最大的同性交友网站，广大女性盆友们难道都不了解一下嘛。</p>
+<ul>
+<li>先解决一个问题：如果我不写代码，还需要用 <strong>Git和Github嘛</strong>？—<strong>需要（划重点）</strong><br>不知道大噶有没有遇到过这样的情况，在写论文尤其是毕业论文的时候，需要不断反复修改，直到最后，改到头晕脑涨，也不知道改到了哪一版，就像图中那样。</li>
+</ul>
+<p><img src="/2018/08/16/VSCODE-GIT/2.png" alt=""></p>
+<p>然后呢，打印论文的时候还很可能打印的不是最终版，直接导致哭晕在打印店。到了这个时候，我就要使出绝技 <strong>Github和Git</strong> 啦。</p>
+<p>说实话，一开始的时候我完全不懂什么是 <strong>Git</strong>，什么是 <strong>Github</strong>，还以为这两个只是名字不同而已，也不知道这些个东西是用来干什么的，但是秉承着什么东西都喜欢瞎鼓捣的性格(Zhuang Bi)，硬是想要用用看，所以今天捏，就想给大家说一说 <strong>Git和Github</strong> 几个最常用的功能吧。</p>
+<h2 id="简单说说Git和Github"><a href="#简单说说Git和Github" class="headerlink" title="简单说说Git和Github"></a>简单说说Git和Github</h2><h3 id="Git官方解释"><a href="#Git官方解释" class="headerlink" title="Git官方解释"></a>Git官方解释</h3><blockquote>
+<p>Git 是由 Linux 之父 Linus Tovalds 为了更好地管理linux内核开发而创立的分布式版本控制／软件配置管理软件。<br></p>
+</blockquote>
+<p>此处是看了解释之后仍然无比蒙圈的大澜。直到很久很久之后，我才逐步开始理解Git的作用。Git的特别之处就是 <strong>他记录的不是文件本身，而是文件的改变</strong>。可能又有盆友想说，这又有什么特别的嘛？就是因为记录的是改变，所以针对上文版本杂乱的论文，如果我们用了 <strong>Git</strong>，一个文件就能解决你所有烦恼。</p>
+<h3 id="Github-来也"><a href="#Github-来也" class="headerlink" title="Github 来也"></a>Github 来也</h3><p>首先，Github是基于Git的一个 <strong>全球最大的同性交友网站</strong>。那么，我们能用它来干什么呢？<br>那当然是 <strong>晒美照，找代码，建博客，还可以看看全世界的大佬们都在干什么</strong>。<br>先贴一张我刚刚建好的 <strong>粉色系少女博客的首页</strong>，</p>
+<h2 id="Git和Github怎么用呢"><a href="#Git和Github怎么用呢" class="headerlink" title="Git和Github怎么用呢"></a>Git和Github怎么用呢</h2><h3 id="先去最大的同性交友网站上看看呗"><a href="#先去最大的同性交友网站上看看呗" class="headerlink" title="先去最大的同性交友网站上看看呗"></a>先去最大的同性交友网站上看看呗</h3><ul>
+<li><a href="https://github.com/" target="_blank" rel="noopener">官网在这里</a></li>
+<li>这边给出<a href="https://guides.github.com/activities/hello-world/" target="_blank" rel="noopener">Github的官方文档</a>，可以帮助大噶很好地了解怎么使用Github。作为小白的我，暂时只用到了图中的这一部分，如果大家也是刚刚开始使用，暂时应该也只会涉及到第一步。<br><img src="/2018/08/16/VSCODE-GIT/4.png" alt=""></li>
+</ul>
+<p>图中画红框的两个部分：</p>
+<ul>
+<li>如果添加了 <strong>Add.gitignore</strong> ，则表明告诉Github，从本地上传至Github时需要忽略的文件。</li>
+<li>如果添加了 <strong>Add license</strong> ，表明这个仓库不同等级的许可行为。<br>对于小白的我，这两个暂时都用不到。仓库创建完成之后，就是下图的样子啦。<br><img src="/2018/08/16/VSCODE-GIT/5.png" alt=""></li>
+</ul>
+<p>这一步做完之后，我们就是一个 <strong>萌新Githuber</strong> 啦，那么接下来呢，就是要和我们的本地仓库进行关联和同步啦。</p>
+<h3 id="在VS-Code用Git"><a href="#在VS-Code用Git" class="headerlink" title="在VS Code用Git"></a>在VS Code用Git</h3><p>VS Code里是直接集成了Git，如果不用VS Code的同学，需要自行下载 <strong>Git</strong>，具体的安装步骤网上还是很多的，既可以直接安装包安装，也可以命令行安装，在此就不细说了。这里给出<a href="https://git-scm.com/" target="_blank" rel="noopener">Git的官网</a>。<br>接下来的操作都是在 <strong>VSCode的终端</strong> 进行的，当然也可以直接用VS Code自带的界面直接操作，下图中的按钮对应的就是VSCode的Git部分，但是我这边应该是之前配置出了问题，导致无法同步Github，所以目前在用终端与Github同步。</p>
+<p><img src="/2018/08/16/VSCODE-GIT/3.png" alt=""></p>
+<h4 id="配置专属SSH-key"><a href="#配置专属SSH-key" class="headerlink" title="配置专属SSH key"></a>配置专属SSH key</h4><p>SSH key是个神马东西捏？大澜现在的理解就是：有了这个专属key，才可以实现身份的认证，然后才能正常地push到Github。</p>
+<blockquote>
+<p>ssh-keygen -t rsa -C <a href="mailto:945086071@qq.com" target="_blank" rel="noopener">945086071@qq.com</a></p>
+</blockquote>
+<p><code>-C</code> 后面替换成你自己注册 <strong>Github时申请的邮箱</strong>。然后一路<code>enter</code>，你的专属SSH key就生成啦。成功生成的图片是这样子的。<br><img src="/2018/08/16/VSCODE-GIT/8.png" alt=""><br>大澜是因为之前生成过SSH key，所以出现<strong>overwrite</strong> 部分。</p>
+<h4 id="让我们把SSH-key贴到Github上吧"><a href="#让我们把SSH-key贴到Github上吧" class="headerlink" title="让我们把SSH key贴到Github上吧"></a>让我们把SSH key贴到Github上吧</h4><blockquote>
+<p>cd /Users/honglan/.ssh/</p>
+</blockquote>
+<blockquote>
+<p>ls -al</p>
+</blockquote>
+<blockquote>
+<p>vim id_rsa.pub</p>
+</blockquote>
+<p>注意：第一条<code>cd</code>命令的路径是你SSH key生成的路径，如果是默认操作的话，直接修改<code>honglan</code>为自身电脑对应的用户名。操作如下。<br><img src="/2018/08/16/VSCODE-GIT/9.png" alt=""></p>
+<p>直接复制 <strong>第三条<code>vim</code>命令运行结束后出现的内容</strong>，如第二张图红框部分。<br><img src="/2018/08/16/VSCODE-GIT/10.png" alt=""></p>
+<p>复制结束，按<code>esc</code>后，输入<code>:q!</code>退出vim。</p>
+<p>将<code>id_rsa.pub</code>复制所得的内容粘贴到Github的SSH key中，具体的操作如下两张图所示。其中<code>title</code>可以随便取，<code>key</code>填的就是刚刚复制的公钥的内容。</p>
+<p><img src="/2018/08/16/VSCODE-GIT/11.png" alt=""></p>
+<p><img src="/2018/08/16/VSCODE-GIT/12.png" alt=""></p>
+<p>添加成功之后是这个样子的啦。</p>
+<p><img src="/2018/08/16/VSCODE-GIT/13.png" alt=""></p>
+<p>然后捏，在本地测试一下是否连接成功。</p>
+<blockquote>
+<p>ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a></p>
+</blockquote>
+<p>连接测试成功之后是这个样子的啦。<br><img src="/2018/08/16/VSCODE-GIT/14.png" alt=""></p>
+<p>至此，我们已经成功和Github通信啦，接下来就需要在本地进行后续的配置。</p>
+<h4 id="在本地配置Github吧"><a href="#在本地配置Github吧" class="headerlink" title="在本地配置Github吧"></a>在本地配置Github吧</h4><blockquote>
+<p>git config –global user.name lanhongvp</p>
+</blockquote>
+<blockquote>
+<p>git config –global user.email <a href="mailto:945086071@qq.com" target="_blank" rel="noopener">945086071@qq.com</a></p>
+</blockquote>
+<p>此处的 <code>lanhongvp</code> 替换成你注册 <strong>Github用户名</strong>。<br>此处的 <a href="mailto:`945086071@qq.com" target="_blank" rel="noopener">`945086071@qq.com</a>` 替换成你注册 <strong>Github时申请的邮箱</strong>。</p>
+<h4 id="克隆Github远程仓库"><a href="#克隆Github远程仓库" class="headerlink" title="克隆Github远程仓库"></a>克隆Github远程仓库</h4><p><code>git clone</code>克隆远程仓库</p>
+<blockquote>
+<p>git clone <a href="https://github.com/lanhongvp/hello_github.git" target="_blank" rel="noopener">https://github.com/lanhongvp/hello_github.git</a></p>
+</blockquote>
+<p><code>git clone</code>之后的内容要换成<code>你自己github的地址，注意后缀.git不要忘记</code>,git clone之后的地址即是图中红框部分，但是不要忘记加后缀。<br><img src="/2018/08/16/VSCODE-GIT/15.png" alt=""></p>
+<p>这个时候，你已经成功的将远程仓库clone到本地了，接下来看看怎么传上去捏。</p>
+<h4 id="本地仓库上传Github"><a href="#本地仓库上传Github" class="headerlink" title="本地仓库上传Github"></a>本地仓库上传Github</h4><p>首先在本地仓库，新建一个markdown，随便写一点内容，我取名为<code>hello_github.md</code>，如图<br><img src="/2018/08/16/VSCODE-GIT/16.png" alt=""></p>
+<p>我们可以看到，此时本地仓库已经多了一个文件了，不再只是一个 <strong>Readme</strong>。然后，<strong>VS Code</strong>终端命令行输入：</p>
+<blockquote>
+<p>git add hello_github.md</p>
+</blockquote>
+<blockquote>
+<p>git commit -m “hello github”</p>
+</blockquote>
+<blockquote>
+<p>git push origin master</p>
+</blockquote>
+<p>其中，<code>git commit</code>可以简单填写这次提交的信息，便于后续版本查看的时候进行回忆。<br><code>git add</code>之后的内容要换成<code>你自己创建的文件的名字，可以直接tab补全文件名</code>，具体的操作如图中红框的部分：<br><img src="/2018/08/16/VSCODE-GIT/17.png" alt=""></p>
+<p>总算是写完了，累死大澜了，还有很多<code>Git</code>的使用，大噶可以去看看<a href="https://git-scm.com/" target="_blank" rel="noopener">官方网站</a>和<a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="noopener">廖雪峰的Git教程</a></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/VS-Code/" rel="tag"><i class="fa fa-tag"></i>VS Code</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/08/15/VSCode-tricks/" rel="next" title="VSCODE_TRICKS">
+                <i class="fa fa-chevron-left"></i> VSCODE_TRICKS
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/hl.jpeg"
+                alt="Hong Lan" />
+            
+              <p class="site-author-name" itemprop="name">Hong Lan</p>
+              <p class="site-description motion-element" itemprop="description">Tomorrow is another day</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/lanhongvp" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://instagram.com/charlotte_laner" target="_blank" title="Instagram">
+                      
+                        <i class="fa fa-fw fa-instagram"></i>Instagram</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简单说说Git和Github"><span class="nav-number">1.</span> <span class="nav-text">简单说说Git和Github</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Git官方解释"><span class="nav-number">1.1.</span> <span class="nav-text">Git官方解释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Github-来也"><span class="nav-number">1.2.</span> <span class="nav-text">Github 来也</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git和Github怎么用呢"><span class="nav-number">2.</span> <span class="nav-text">Git和Github怎么用呢</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#先去最大的同性交友网站上看看呗"><span class="nav-number">2.1.</span> <span class="nav-text">先去最大的同性交友网站上看看呗</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在VS-Code用Git"><span class="nav-number">2.2.</span> <span class="nav-text">在VS Code用Git</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#配置专属SSH-key"><span class="nav-number">2.2.1.</span> <span class="nav-text">配置专属SSH key</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#让我们把SSH-key贴到Github上吧"><span class="nav-number">2.2.2.</span> <span class="nav-text">让我们把SSH key贴到Github上吧</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#在本地配置Github吧"><span class="nav-number">2.2.3.</span> <span class="nav-text">在本地配置Github吧</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#克隆Github远程仓库"><span class="nav-number">2.2.4.</span> <span class="nav-text">克隆Github远程仓库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#本地仓库上传Github"><span class="nav-number">2.2.5.</span> <span class="nav-text">本地仓库上传Github</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-reddit-alien"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Hong Lan</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'KufiThL2Cr1MCGJGI4r2B2e6-gzGzoHsz',
+        appKey: 'NIb0Q6tYzMgps4y8ENCfQkiA',
+        placeholder: 'Say something to me',
+        avatar:'mm',
+        meta:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+</body>
+</html>
+<!-- love heart -->
+<script type="text/javascript" src="/js/src/love.js"></script>
