@@ -113,10 +113,10 @@
 <meta property="og:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/12.png">
 <meta property="og:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/13.png">
 <meta property="og:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/14.png">
-<meta property="og:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/15.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/19.png">
 <meta property="og:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/16.png">
 <meta property="og:image" content="http://yoursite.com/2018/08/16/VSCODE-GIT/17.png">
-<meta property="og:updated_time" content="2018-08-17T09:14:38.598Z">
+<meta property="og:updated_time" content="2018-09-09T04:11:57.686Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="VSCODE_GIT">
 <meta name="twitter:description" content="lalala，澜子我又回来啦，这一次就说说 Git和Github 吧。Github作为全球最大的同性交友网站，广大女性盆友们难道都不了解一下嘛。  先解决一个问题：如果我不写代码，还需要用 Git和Github嘛？—需要（划重点）不知道大噶有没有遇到过这样的情况，在写论文尤其是毕业论文的时候，需要不断反复修改，直到最后，改到头晕脑涨，也不知道改到了哪一版，就像图中那样。   然后呢，打印论文的时">
@@ -466,11 +466,16 @@
 <p>git config –global user.email <a href="mailto:945086071@qq.com" target="_blank" rel="noopener">945086071@qq.com</a></p>
 </blockquote>
 <p>此处的 <code>lanhongvp</code> 替换成你注册 <strong>Github用户名</strong>。<br>此处的 <a href="mailto:`945086071@qq.com" target="_blank" rel="noopener">`945086071@qq.com</a>` 替换成你注册 <strong>Github时申请的邮箱</strong>。</p>
-<h4 id="克隆Github远程仓库"><a href="#克隆Github远程仓库" class="headerlink" title="克隆Github远程仓库"></a>克隆Github远程仓库</h4><p><code>git clone</code>克隆远程仓库</p>
+<h4 id="克隆Github远程仓库-SSH-OR-HTTPS"><a href="#克隆Github远程仓库-SSH-OR-HTTPS" class="headerlink" title="克隆Github远程仓库[SSH OR HTTPS]"></a>克隆Github远程仓库[SSH OR HTTPS]</h4><p><code>HTTPS git clone</code>克隆远程仓库<br>若运用<code>HTTPS</code>,直接<code>git clone</code>即可，无需上述<code>SSH KEY</code>的配置，clone地址如图所示。</p>
 <blockquote>
 <p>git clone <a href="https://github.com/lanhongvp/hello_github.git" target="_blank" rel="noopener">https://github.com/lanhongvp/hello_github.git</a></p>
 </blockquote>
-<p><code>git clone</code>之后的内容要换成<code>你自己github的地址，注意后缀.git不要忘记</code>,git clone之后的地址即是图中红框部分，但是不要忘记加后缀。<br><img src="/2018/08/16/VSCODE-GIT/15.png" alt=""></p>
+<p><code>git clone</code>之后的内容要换成<code>你自己github的地址</code><br><img src="/2018/08/16/VSCODE-GIT/19.png" alt=""></p>
+<p><code>SSH git clone</code>克隆远程仓库</p>
+<blockquote>
+<p>git clone <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:lanhongvp/hello_github.git</p>
+</blockquote>
+<p>若采用此方式，则需要<code>SSH KEY</code>的相关配置，大噶可以各取所需。</p>
 <p>这个时候，你已经成功的将远程仓库clone到本地了，接下来看看怎么传上去捏。</p>
 <h4 id="本地仓库上传Github"><a href="#本地仓库上传Github" class="headerlink" title="本地仓库上传Github"></a>本地仓库上传Github</h4><p>首先在本地仓库，新建一个markdown，随便写一点内容，我取名为<code>hello_github.md</code>，如图<br><img src="/2018/08/16/VSCODE-GIT/16.png" alt=""></p>
 <p>我们可以看到，此时本地仓库已经多了一个文件了，不再只是一个 <strong>Readme</strong>。然后，<strong>VS Code</strong>终端命令行输入：</p>
@@ -732,7 +737,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简单说说Git和Github"><span class="nav-number">1.</span> <span class="nav-text">简单说说Git和Github</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Git官方解释"><span class="nav-number">1.1.</span> <span class="nav-text">Git官方解释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Github-来也"><span class="nav-number">1.2.</span> <span class="nav-text">Github 来也</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git和Github怎么用呢"><span class="nav-number">2.</span> <span class="nav-text">Git和Github怎么用呢</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#先去最大的同性交友网站上看看呗"><span class="nav-number">2.1.</span> <span class="nav-text">先去最大的同性交友网站上看看呗</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在VS-Code用Git"><span class="nav-number">2.2.</span> <span class="nav-text">在VS Code用Git</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#配置专属SSH-key"><span class="nav-number">2.2.1.</span> <span class="nav-text">配置专属SSH key</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#让我们把SSH-key贴到Github上吧"><span class="nav-number">2.2.2.</span> <span class="nav-text">让我们把SSH key贴到Github上吧</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#在本地配置Github吧"><span class="nav-number">2.2.3.</span> <span class="nav-text">在本地配置Github吧</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#克隆Github远程仓库"><span class="nav-number">2.2.4.</span> <span class="nav-text">克隆Github远程仓库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#本地仓库上传Github"><span class="nav-number">2.2.5.</span> <span class="nav-text">本地仓库上传Github</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简单说说Git和Github"><span class="nav-number">1.</span> <span class="nav-text">简单说说Git和Github</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Git官方解释"><span class="nav-number">1.1.</span> <span class="nav-text">Git官方解释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Github-来也"><span class="nav-number">1.2.</span> <span class="nav-text">Github 来也</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git和Github怎么用呢"><span class="nav-number">2.</span> <span class="nav-text">Git和Github怎么用呢</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#先去最大的同性交友网站上看看呗"><span class="nav-number">2.1.</span> <span class="nav-text">先去最大的同性交友网站上看看呗</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在VS-Code用Git"><span class="nav-number">2.2.</span> <span class="nav-text">在VS Code用Git</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#配置专属SSH-key"><span class="nav-number">2.2.1.</span> <span class="nav-text">配置专属SSH key</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#让我们把SSH-key贴到Github上吧"><span class="nav-number">2.2.2.</span> <span class="nav-text">让我们把SSH key贴到Github上吧</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#在本地配置Github吧"><span class="nav-number">2.2.3.</span> <span class="nav-text">在本地配置Github吧</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#克隆Github远程仓库-SSH-OR-HTTPS"><span class="nav-number">2.2.4.</span> <span class="nav-text">克隆Github远程仓库[SSH OR HTTPS]</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#本地仓库上传Github"><span class="nav-number">2.2.5.</span> <span class="nav-text">本地仓库上传Github</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
